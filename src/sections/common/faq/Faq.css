@@ -1,0 +1,63 @@
+.title2 {
+  font-size: 2rem;
+  margin-bottom: 10px; 
+}
+
+.geral {
+  display: flex;
+  background-color: white;
+  height: auto;
+  padding: 20px; 
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .geral {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bloco, .accord {
+    width: 90% !important; 
+    padding: 10px;
+  }
+
+  
+  .accord {
+    width: 90% !important;
+  }
+}
+
+.bloco {
+  padding: 20px;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.accord {
+
+  padding: 20px;
+  width: 40%; 
+}
+
+.subtitulo {
+  color: black;
+  margin-bottom: 20px; 
+}
+
+.quebra {
+  margin-left: 0;
+  width: 94px;
+  border: none;
+  height: 6px;
+  background: linear-gradient(87.79deg, #02A8F6 -3.73%, #9849FF 82.4%);
+}
+
+.icone{
+  margin-right: 8px;
+  width: 20px; 
+  height: 20px;
+  border-radius: 25%; 
+  border: 1px solid #000; 
+  padding: 5px; 
+}

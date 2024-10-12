@@ -1,0 +1,129 @@
+.programacao-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.programacao-bloco {
+  border: 3px solid #1f1f1f; /* Borda */
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  background-color: transparent; /* Mesmo fundo que a página */
+}
+
+.programacao-bloco h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.evento-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.container-hor-tit {
+  display: flex;
+}
+
+.evento-horario {
+  font-size: 14px;
+  color: #bfbfbf;
+  margin-right: 10px;
+  text-wrap: nowrap;
+}
+
+.evento-titulo {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.evento-palestrantes {
+  font-size: 14px;
+  font-style: italic;
+  color: #bfbfbf;
+  margin-top: 3px; /* Espaçamento entre título e palestrante */
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+.palestra {
+  background-color: #00aaff;
+}
+
+.minicurso {
+  background-color: #aa00ff;
+}
+
+.hackaton {
+  background-color: #4d79fb;
+}
+
+@media (max-width: 640px) {
+  .programacao-container {
+    flex-direction: column; /* Em mobile */
+    align-items: center;
+  }
+
+  .programacao-bloco {
+    width: 80% !important;
+  }
+
+  .evento-titulo,
+  .evento-palestrantes,
+  .evento-horario {
+    font-size: 12px;
+  }
+
+  .container-hor-tit {
+    padding-right: 10px;
+  }
+
+  .evento-horario {
+    align-content: center;
+  }
+
+  .tag {
+    font-size: 10px;
+  }
+
+  .programacao-bloco h1 {
+    font-size: 16px;
+  }
+
+  .data-atual {
+    font-size: 12px;
+  }
+
+  .nav-buttons {
+    padding: 10px 5px;
+  }
+
+  .programacao-section {
+    padding: 40px 0px;
+  }
+  .texto-prog {
+    margin-top: 0px
+  }
+}

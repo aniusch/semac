@@ -1,0 +1,257 @@
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    background-color: #FFFFFF;
+    border-radius: 30px 30px 0 0;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    width: 601px;
+}
+
+.txt h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #101015;
+    margin: 20px 0;
+    line-height: 53px;
+}
+
+.txt p {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: normal;
+    color: #101015;
+    width: fit-content;
+}
+
+.retangulo {
+    width: 95px;
+    height: 6px;
+    background: linear-gradient(87.79deg, #02A8F6 -3.73%, #9849FF 82.4%);
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+.iconesCategorias {
+    display: flex;
+    gap: 10px;
+    width: 15rem;
+}
+
+.icone-circulo {
+    width: 110px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.icone-circulo img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1499px) {
+    .textos h1 {
+        margin: 0px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #101015;
+    }
+
+    .textos p {
+        font-size: 16px;
+        font-weight: normal;
+        color: #101015;
+        margin: 0;
+        line-height: 22.4px;
+    }
+
+    .apenas-Mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .txt {
+        width: 1000px;
+    }
+
+    .categorias {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 20px;
+    }
+
+    .textos h1 {
+        margin: 0px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #101015;
+    }
+
+    .textos p {
+        font-size: 16px;
+        font-weight: normal;
+        color: #101015;
+        margin: 0;
+        line-height: 22.4px;
+    }
+
+    .apenas-Mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .categorias {
+        grid-row-gap: 60px;
+    }
+
+    .sobre {
+        column-gap: 25px;
+        padding: 50px;
+    }
+
+    .txt h1 {
+        font-size: 2.2rem;
+    }
+
+    .txt p {
+        font-size: 1rem;
+        width: 400px;
+    }
+
+    .textos h1 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .textos p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .apenas-Mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btnArrow {
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        top: 2.5rem;
+        border: transparent;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-inline: 0px;
+        background: transparent;
+        width: fit-content;
+        display: flex;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+
+    .btnArrow.left {
+        left: 0%;
+        transform: rotate(-90deg);
+    }
+
+    .btnArrow.right {
+        right: 0%;
+        transform: rotate(90deg);
+    }
+
+    .btnArrow.disabled img {
+        opacity: 0.44;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 40px 10px 40px 10px;
+    }
+
+    .txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .txt h1 {
+        font-size: 2.15rem;
+        padding: 0;
+    }
+
+    .txt p {
+        font-size: 0.9rem;
+        padding: 0 30px;
+    }
+
+    .apenas-Desktop {
+        display: none;
+    }
+
+    .iconesCategorias {
+        align-items: center;
+        text-align: center;
+        margin-inline: auto;
+        position: relative;
+        width: fit-content;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .iconesCategorias .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .textos h1 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .textos p {
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.5;
+        margin: 0;
+        width: 15rem;
+    }
+
+    .icone-circulo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icone-circulo img {
+        width: 50%;
+        height: 50%;
+    }
+}

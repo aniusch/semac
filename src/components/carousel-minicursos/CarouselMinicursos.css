@@ -1,0 +1,181 @@
+.carousel-container {
+  width: 90vw;
+  margin: auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.swiper-wrapper {
+  height: 470px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev {
+  left: -50px;
+}
+
+.swiper-button-next {
+  right: -50px;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  height: 380px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 1s ease;
+}
+
+.category {
+  padding: 2px 15px;
+  font-size: 12px;
+  width: fit-content;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.minicurso {
+  background-color: #9849FF;
+}
+
+.palestra {
+  background-color: #02A8F6;
+}
+
+.oficina {
+    background-color: #4D79FB;
+  }
+
+.carousel-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.carousel-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.carousel-card p strong {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #02a8f6, #9849ff) 1;
+}
+
+.carousel-card p strong + span {
+  color: #02A8F6;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.carousel-card p strong + span:hover {
+  color: #9933ff;
+}
+
+.veja-mais {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  background: linear-gradient(to right, #02a8f6, #9849ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.veja-mais:hover {
+  color: #9933ff;
+  text-decoration: underline;
+}
+
+.swiper-pagination-bullet {
+  background: #999;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #02A8F6;
+  opacity: 1;
+}
+
+.swiper-slide {
+    transform: scale(0.8);
+}
+
+ .swiper-slide-active {
+    transform: scale(1);
+} 
+@media (max-width: 1024px) {
+  .swiper-wrapper {
+    margin: 0;
+    height: 580px;
+  }
+
+  .carousel-card {
+    margin: 0;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 80vw;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-wrapper {
+    width: 80vw;
+    margin: 0;
+    height: 550px;
+  }
+
+  .carousel-card {
+    margin: 0;
+    height: 450px;
+  }
+}

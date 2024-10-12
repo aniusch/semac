@@ -1,0 +1,13 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#02a8f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9849ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Circulo ao redor -->
+  <circle cx="25" cy="24.8" r="24" stroke="url(#gradient1)" stroke-width="2" fill="none"/>
+  
+  <!-- Caminho da seta -->
+  <path d="M10.2929 22.2573C9.90237 22.6478 9.90237 23.2809 10.2929 23.6715L16.6569 30.0354C17.0474 30.4259 17.6805 30.4259 18.0711 30.0354C18.4616 29.6449 18.4616 29.0117 18.0711 28.6212L12.4142 22.9644L18.0711 17.3075C18.4616 16.917 18.4616 16.2838 18.0711 15.8933C17.6805 15.5028 17.0474 15.5028 16.6569 15.8933L10.2929 22.2573ZM36 21.9644L11 21.9644V23.9644L36 23.9644V21.9644Z" fill="url(#gradient1)"/>
+</svg>

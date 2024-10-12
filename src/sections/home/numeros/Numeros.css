@@ -1,0 +1,90 @@
+.numeros {
+  padding: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+
+}
+
+.numeros h1 {
+  font-size: 2.8rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.numeros h1:first-of-type {
+  margin-bottom: 0px;
+}
+
+.highlight {
+  background: linear-gradient(to right, #02A8F6, #9849FF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.divider {
+  background: linear-gradient(to right, #02A8F6, #9849FF);
+  height: 5px;
+  width: 680px;
+  margin: 10px auto;
+  border: none;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 200px; /* Adjust based on design needs */
+  text-align: center;
+  margin: 10px;
+}
+
+.stat-item h2 {
+  font-size: 4rem;
+  margin: 0;
+  color: black;
+}
+
+.stat-item p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .numeros h1 {
+    font-size: 2.5rem;
+  }
+
+  .divider {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .numeros h1 {
+    font-size: 2rem;
+  }
+
+  .stat-item h2 {
+    font-size: 3.2rem;
+  }
+
+  .stat-item p {
+    font-size: 1rem;
+  }
+
+  .stat-item {
+    min-width: 0;
+  }
+
+  .stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,241 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-image: url("../../../assets/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 2rem;
+  height: 100%;
+}
+
+.hero-content img {
+  width: 55vw;
+  padding-left: 10rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 1.25rem;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: white;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.menu.open {
+  display: flex;
+}
+
+.menu li {
+  padding: 0;
+}
+
+.menu a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  border-bottom: 4px solid #9849ff;
+  padding-bottom: 0.25rem;
+  transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;
+  border-radius: 4px;
+}
+
+.arrow-down {
+margin-bottom: 1rem;
+}
+
+.arrow-down:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.terceira-edicao-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.terceira-edicao-btn {
+  text-decoration: none;
+  background: linear-gradient(87.79deg, #02a8f6 -3.73%, #9849ff 82.4%);
+  background-color: #9849ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-size: 200% 200%;
+  animation: gradientMove 5s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.terceira-edicao-btn:hover {
+  background-size: 200% 200%;
+  box-shadow: 0 0 10px rgba(2, 168, 246, 0.7), 0 0 20px rgba(152, 73, 255, 0.7);
+  transition: box-shadow 0.5s ease;
+}
+
+
+.terceira-edicao-text-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  display: inline-block;
+}
+
+.terceira-edicao-text {
+  font-size: 1rem;
+  font-weight: 800;
+  background: linear-gradient(87.79deg, #02a8f6 -3.73%, #9849ff 82.4%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+@media (max-width: 48em) {
+  .hero {
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .hero-content img {
+    width: 95vw;
+    padding: 0;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.625rem;
+    position: absolute;
+    top: 3.125rem;
+    right: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  .menu.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    width: 80vw;
+  }
+
+  .menu li {
+    padding: 0.5rem 0;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .terceira-edicao-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .terceira-edicao-btn, .terceira-edicao-text-wrapper {
+    padding: 0.6rem 1.25rem;
+  }
+}
