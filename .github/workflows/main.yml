@@ -37,7 +37,7 @@ jobs:
         with:
           server: ftp://200.129.241.66
           port: ${{secrets.FTP_PORT }}
-          username: ${{secrets.FPT_USERNAME}}
+          username: semac_ftp_graciely
           password: ${{secrets.FTP_PASSWORD}}
           protocol: ftps  
           local-dir: ./build  
