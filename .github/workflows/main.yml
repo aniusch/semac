@@ -43,7 +43,7 @@ jobs:
           name: build-artifacts
 
       - name: List files after download
-        run: ls -la ./dist 
+        run: ls -la
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
