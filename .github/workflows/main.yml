@@ -53,5 +53,4 @@ jobs:
           username: semac_ftp_graciely
           password: xqDCq!SfMy4bH
           protocol: ftps  
-          local-dir: ./dist/  
           server-dir: ./  
