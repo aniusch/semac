@@ -4,7 +4,7 @@
 }
 
 .footer_container {
-  margin-top: 3rem;
+  padding: 20px;
   display: flex;
   grid-template-columns: 2fr 1fr;
   color: white;
@@ -50,7 +50,10 @@
 }
 
 .footer_logos {
-  align-items: start;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
 }
 
 .link-item {
@@ -141,12 +144,17 @@
   justify-content: space-evenly;
 }
 
-.link-item a, .footer_contact a {
+.link-item a,
+.footer_contact a {
   color: white;
   text-decoration: none;
 }
 
-.link-item a:hover, .footer_contact a:hover, .footer_bottom a:hover, .footer_menu a:hover, .footer_social_links a:hover {
+.link-item a:hover,
+.footer_contact a:hover,
+.footer_bottom a:hover,
+.footer_menu a:hover,
+.footer_social_links a:hover {
   color: #d0cece;
-  text-decoration: underline; 
+  text-decoration: underline;
 }

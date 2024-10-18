@@ -1,5 +1,5 @@
 import "./Footer.css";
-import LogoSemac from "../../../assets/footer_logos/logo_semac.png";
+import LogoSemac from "../../../assets/logo.svg";
 import LogoUFMT from "../../../assets/footer_logos/logo_ufmt.png";
 import Instagram from "../../../assets/footer_logos/line-md_instagram.png";
 import Github from "../../../assets/footer_logos/mdi_github.png";
@@ -13,7 +13,7 @@ const Footer = ({ links }) => {
       <div className="footer_container">
         <div className="footer_col">
           <div className="footer_logos">
-            <img src={LogoSemac} alt="Logo Semac" />
+            <img src={LogoSemac} alt="Logo Semac" height={40}/>
             <img src={LogoUFMT} alt="Logo UFMT" />
           </div>
 
@@ -54,8 +54,7 @@ const Footer = ({ links }) => {
                 rel="noopener noreferrer"
               >
                 Universidade Federal de Mato Grosso – Faculdade de Engenharia
-                (FAENG), Av. Fernando Corrêa da Costa, nº 2367, Bairro Boa
-                Esperança – UFMT, Cuiabá – MT
+                (FAENG) - MT
               </a>
             </p>
           </div>
