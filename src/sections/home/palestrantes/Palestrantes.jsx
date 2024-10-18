@@ -105,11 +105,12 @@ const Palestrantes = () => {
           draggable={true}
           showDots={false}
           responsive={responsive}
-          infinite={false}
+          infinite={true}
           autoPlay={true}
           keyBoardControl={true}
           partialVisible={false}
           arrows={false}
+          pauseOnHover={true}
           containerClass="palestrantes_list"
           renderButtonGroupOutside={true}
           customButtonGroup={<ButtonGroup device={device} />}

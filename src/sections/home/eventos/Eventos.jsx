@@ -54,6 +54,7 @@ const Eventos = () => (
         autoPlaySpeed={3000}
         keyBoardControl
         showDots
+        pauseOnHover
         dotListClass="custom-dot-list-style"
         arrows={true}
         containerClass="eventos-container"

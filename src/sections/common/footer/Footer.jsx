@@ -90,7 +90,7 @@ const Footer = ({ links }) => {
                 </a>
                 <a
                   className="link-noStyle"
-                  href="https://www.instagram.com/semac_ufmt/"
+                  href="https://github.com/aniusch/semac"
                   target="_blank"
                 >
                   GitHub
