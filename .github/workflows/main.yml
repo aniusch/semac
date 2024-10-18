@@ -35,10 +35,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp://200.129.241.66
+          server: ${{ secrets.FTP_SERVERURL }}
           port: ${{ secrets.FTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ secrets.FPT_PASSWORD }}
           protocol: ftps  
           local-dir: ./build  
           server-dir: ./  
