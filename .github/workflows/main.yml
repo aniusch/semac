@@ -27,6 +27,12 @@ jobs:
       - name: Upload production-ready files
         run: echo "Files built successfully"
 
+      - name: List files in the project directory
+        run: ls -la
+
+      - name: List files in the dist directory
+        run: ls -la ./dist
+
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
