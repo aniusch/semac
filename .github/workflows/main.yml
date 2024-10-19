@@ -48,9 +48,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 200.129.241.66
-          port: 12251
-          username: semac_ftp_graciely
-          password: xqDCq!SfMy4bH
+          server: 
+          port: 
+          username: 
+          password: 
           protocol: ftps  
           server-dir: ./  
