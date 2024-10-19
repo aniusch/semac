@@ -6,6 +6,7 @@ import arrowDown from "../../../assets/icons/arrow_down.svg";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import linksPaginas from "../../../data/links_paginas";
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,7 +43,7 @@ const Hero = () => {
         <ul className={`menu ${menuOpen ? "open" : ""}`}>
           {linksPaginas.homePageLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href}>{link.text}</a>
+              <HashLink smooth to={link.href}>{link.text}</HashLink>
             </li>
           ))}
         </ul>

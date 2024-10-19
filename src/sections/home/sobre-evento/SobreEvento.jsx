@@ -99,7 +99,7 @@ const SobreEvento = () => {
                 </div>
 
                 <div className='apenas-Mobile'>
-                    <Carousel arrows={false} customButtonGroup={<ButtonGroup />} responsive={responsive} autoPlay={true} autoPlaySpeed={5000} infinite={true}>
+                    <Carousel arrows={false} customButtonGroup={<ButtonGroup />} responsive={responsive} autoPlay={true} autoPlaySpeed={5000} infinite={true} pauseOnHover={true} shouldResetAutoplay={true}>
                         {categorias.map((categoria) => (
                             <div className="iconesCategorias" id={categoria.id} key={categoria.id}>
                                 <div className="icone-circulo" style={{ backgroundColor: categoria.corCirculo }}>

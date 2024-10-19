@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Palestrantes.css";
 import ArrowRight from "../../../assets/icons/arrow_right.svg";
 import ArrowLeft from "../../../assets/icons/arrow_left.svg";
@@ -64,14 +64,25 @@ const ButtonGroup = ({ device, next, previous, goToSlide, ...rest }) => {
 };
 
 const Palestrantes = () => {
+  const [autoPlay, setAutoPlay] = useState(true); 
+
+  const handleInteractionStart = () => {
+    setAutoPlay(false);
+  };
+
+  const handleInteractionEnd = () => {
+    setAutoPlay(true);
+  };
+
   const device = (() => {
     if (useMediaQuery({ query: "(max-width: 768px)" })) return "mobile";
     else return "desktop";
   })();
+
   return (
     <div id="palestrantes" className="palestrantes">
       <div className="column-container" id="texto e seta">
-        {device == "desktop" ? (
+        {device === "desktop" ? (
           <div className="column-container">
             <div className="column">
               <h1 className="title" id="texto">
@@ -99,24 +110,31 @@ const Palestrantes = () => {
           </div>
         )}
       </div>
-      <div style={{ position: "relative" }}>
+      <div
+        style={{ position: "relative" }}
+        onMouseEnter={handleInteractionStart} 
+        onMouseLeave={handleInteractionEnd} 
+      >
         <Carousel
           swipeable={true}
           draggable={true}
           showDots={false}
           responsive={responsive}
           infinite={true}
-          autoPlay={true}
+          autoPlay={autoPlay} 
           keyBoardControl={true}
           partialVisible={false}
           arrows={false}
-          pauseOnHover={true}
+          pauseOnHover={false}
+          shouldResetAutoplay={false}
           containerClass="palestrantes_list"
           renderButtonGroupOutside={true}
           customButtonGroup={<ButtonGroup device={device} />}
           deviceType={device}
           dotListClass="custom-dot-list-style"
           itemClass="palestrante"
+          beforeChange={handleInteractionStart} 
+          afterChange={handleInteractionEnd} 
         >
           {Palestrantes_list.map((palestrante) => {
             return (
