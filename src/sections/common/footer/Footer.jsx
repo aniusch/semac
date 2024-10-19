@@ -6,6 +6,7 @@ import Github from "../../../assets/footer_logos/mdi_github.png";
 import PhoneIcon from "../../../assets/footer_logos/Vector-1.png";
 import MailIcon from "../../../assets/footer_logos/Vector-2.png";
 import LocationIcon from "../../../assets/footer_logos/Vector.png";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = ({ links }) => {
   return (
@@ -13,7 +14,7 @@ const Footer = ({ links }) => {
       <div className="footer_container">
         <div className="footer_col">
           <div className="footer_logos">
-            <img src={LogoSemac} alt="Logo Semac" height={40}/>
+            <img src={LogoSemac} alt="Logo Semac" height={40} />
             <img src={LogoUFMT} alt="Logo UFMT" />
           </div>
 
@@ -63,9 +64,9 @@ const Footer = ({ links }) => {
           <div className="footer_col">
             <p className="colored-bigger">Menu</p>
             {links.map((link) => (
-              <a key={link.href} href={link.href} className="link-item">
+              <HashLink smooth to={link.href} className="link-item">
                 {link.text}
-              </a>
+              </HashLink>
             ))}
           </div>
           <div className="footer_col">
