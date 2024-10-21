@@ -56,7 +56,7 @@ const Hero = () => {
           className="main-logo"
         />
         <p className="hero-subtitle">
-          Nosso encontro anual para criar, conectar e transformar.
+          luvya mc
         </p>
         <div className="terceira-edicao-container">
           <div className="terceira-edicao-text-wrapper">
