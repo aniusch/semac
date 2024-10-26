@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/carousel-programacao/CarouselProgramacao.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/carousel-programacao/CarouselProgramacao.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import "./CarouselProgramacao.css";
+
+/**
+ * Componente CarouselProgramacao para exibir uma programação de eventos em um formato de carrossel, com data, turno e detalhes dos eventos.
+ *
+ * @component
+ * @param {Object} props - Propriedades do componente.
+ * @param {string} props.data - Data do dia da programação (ex.: "25/10/2024").
+ * @param {Array&lt;Object>} props.eventos - Lista de turnos do dia, cada um contendo eventos específicos.
+ * @param {string} props.eventos[].dia - Dia da semana (ex.: "Segunda-feira").
+ * @param {string} props.eventos[].turno - Turno dos eventos (ex.: "Manhã", "Tarde").
+ * @param {Array&lt;Object>} props.eventos[].eventos - Lista de eventos para o turno especificado.
+ * @param {string} props.eventos[].eventos[].horario - Horário do evento (ex.: "09:00").
+ * @param {string} props.eventos[].eventos[].titulo - Título do evento (ex.: "Palestra de Abertura").
+ * @param {Array&lt;string>} props.eventos[].eventos[].palestrantes - Lista de palestrantes do evento.
+ * @param {string} props.eventos[].eventos[].tipo - Tipo do evento (ex.: "Workshop", "Palestra").
+ * 
+ * @example
+ * const data = "25/10/2024";
+ * const eventos = [
+ *   {
+ *     dia: "Segunda-feira",
+ *     turno: "Manhã",
+ *     eventos: [
+ *       {
+ *         horario: "09:00",
+ *         titulo: "Palestra de Abertura",
+ *         palestrantes: ["Ana Silva", "Carlos Souza"],
+ *         tipo: "Palestra"
+ *       },
+ *       {
+ *         horario: "10:30",
+ *         titulo: "Workshop de React",
+ *         palestrantes: ["João Almeida"],
+ *         tipo: "Workshop"
+ *       }
+ *     ]
+ *   },
+ *   {
+ *     dia: "Segunda-feira",
+ *     turno: "Tarde",
+ *     eventos: [
+ *       {
+ *         horario: "14:00",
+ *         titulo: "Painel de Discussão",
+ *         palestrantes: ["Maria Costa", "Paulo Pereira"],
+ *         tipo: "Painel"
+ *       }
+ *     ]
+ *   }
+ * ];
+ * 
+ * &lt;CarouselProgramacao data={data} eventos={eventos} />
+ *
+ * @returns {JSX.Element} Carrossel de programação com data, turnos e detalhes de cada evento.
+ */
+const CarouselProgramacao = ({ data, eventos }) => {
+  return (
+    &lt;div className="programacao-container">
+      {eventos.map((turno, index) => (
+        &lt;div key={index} className="programacao-bloco">
+          &lt;h1>
+            {data} - {turno.dia} - {turno.turno}
+          &lt;/h1>
+          &lt;ul>
+            {turno.eventos.map((evento, idx) => (
+              &lt;li key={idx}>
+                &lt;div className="evento-info">
+                  &lt;div>
+                    &lt;div className="container-hor-tit">
+                      &lt;span className="evento-horario">{evento.horario}&lt;/span>
+                      &lt;div>
+                        &lt;div>
+                          &lt;span className="evento-titulo">{evento.titulo}&lt;/span>
+                        &lt;/div>
+                        &lt;div className="evento-palestrantes">
+                          &lt;span>com {evento.palestrantes.join(" e ")}&lt;/span>
+                        &lt;/div>
+                      &lt;/div>
+                    &lt;/div>
+                  &lt;/div>
+                  &lt;div>
+                    &lt;span className={`tag ${evento.tipo.toLowerCase()}`}>
+                      {evento.tipo}
+                    &lt;/span>
+                  &lt;/div>
+                &lt;/div>
+              &lt;/li>
+            ))}
+          &lt;/ul>
+        &lt;/div>
+      ))}
+    &lt;/div>
+  );
+};
+
+export default CarouselProgramacao;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

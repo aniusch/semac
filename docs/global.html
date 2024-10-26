@@ -1,0 +1,7771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="Palestrantes_list"><span class="type-signature">(constant) </span>Palestrantes_list<span class="type-signature"> :Array.&lt;Object></span></h4>
+
+
+
+
+<div class="description">
+    Lista de palestrantes do evento, com informações detalhadas sobre cada palestrante, incluindo nome, descrição e imagem.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Object></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nome</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome do palestrante.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>descricao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Breve biografia ou descrição do palestrante.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagem</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Caminho para a imagem do palestrante.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_lista_palestrantes.js.html">data/lista_palestrantes.js</a>, <a href="data_lista_palestrantes.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const primeiroPalestrante = Palestrantes_list[0];
+console.log(primeiroPalestrante.nome); // Saída: "Prof. Dr. Renan Aranha"</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="empresasLogos"><span class="type-signature">(constant) </span>empresasLogos<span class="type-signature"> :Array.&lt;Object></span></h4>
+
+
+
+
+<div class="description">
+    Lista de edições anteriores do evento SEMAC, com detalhes sobre cada edição,
+incluindo título, descrição e uma galeria de imagens associadas.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Object></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome da edição (ex.: "1ª EDIÇÃO", "2ª EDIÇÃO").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título da edição, que pode incluir HTML para formatação.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>descricao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Descrição detalhada da edição.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de imagens associadas à edição.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens[].src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Caminho para a imagem.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens[].size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tamanho da imagem (ex.: "small", "medium", "large").</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_lista_logoscolaboradores.js.html">data/lista_logoscolaboradores.js</a>, <a href="data_lista_logoscolaboradores.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const edicao = lista_edicoes_anteriores[0];
+console.log(edicao.titulo); // Saída: "III Semana das Engenharias de&lt;br />Automação e Computação"</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="faqItems"><span class="type-signature">(constant) </span>faqItems<span class="type-signature"> :Array.&lt;Object></span></h4>
+
+
+
+
+<div class="description">
+    Lista de itens de FAQ (Perguntas Frequentes) para exibir informações sobre o evento.
+Cada item contém um ícone, título e conteúdo explicativo.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Object></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>icon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Caminho para o ícone representativo do item.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>title</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título ou pergunta do item de FAQ.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">JSX.Element</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Conteúdo ou resposta associado ao item de FAQ.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_perguntas_faq.jsx.html">data/perguntas_faq.jsx</a>, <a href="data_perguntas_faq.jsx.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const faqItems = [
+  {
+    icon: user,
+    title: "Quando normalmente o evento ocorre?",
+    content: "O evento é realizado anualmente, geralmente no mês de dezembro. As datas exatas são definidas conforme o calendário da organização."
+  },
+  {
+    icon: checklist,
+    title: "Como faço para me inscrever?",
+    content: (
+      &lt;>
+        Para se inscrever, acesse o site da edição e {" "}
+        &lt;a href="https://eventosacademicos.ufmt.br/index.php/semac/" target="_blank" rel="noopener noreferrer">
+          se inscreva
+        &lt;/a>.
+      &lt;/>
+    )
+  },
+  // Outros itens
+];</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="linksPaginas"><span class="type-signature">(constant) </span>linksPaginas<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Objeto contendo listas de links para navegação em diferentes páginas do site.
+Cada lista representa uma seção específica da página, com links e textos associados.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>homePageLinks</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Links de navegação para a página inicial.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>homePageLinks[].href</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Âncora ou URL do link.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>homePageLinks[].text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Texto de exibição do link.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>thirdEditionPageLinks</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Links de navegação para a página da terceira edição.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>thirdEditionPageLinks[].href</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Âncora ou URL do link.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>thirdEditionPageLinks[].text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Texto de exibição do link.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previousEditionsPageLinks</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Links de navegação para a página de edições anteriores.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previousEditionsPageLinks[].href</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Âncora ou URL do link.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previousEditionsPageLinks[].text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Texto de exibição do link.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_links_paginas.js.html">data/links_paginas.js</a>, <a href="data_links_paginas.js.html#line24">line 24</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de acesso a um link específico
+const primeiroLinkHome = linksPaginas.homePageLinks[0];
+console.log(primeiroLinkHome.href); // Saída: "#sobre-evento"</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="listaMinicursosPalestras"><span class="type-signature">(constant) </span>listaMinicursosPalestras<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Lista de minicursos e palestras organizados por edição do evento, com informações detalhadas sobre cada atividade.
+Cada item contém categoria, título, convidado, local e palavras-chave associadas.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de atividades da primeira edição do evento.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao1[].categoria</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Categoria da atividade (ex.: "Palestra", "Oficina").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao1[].titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título da atividade.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao1[].convidado</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome do convidado ou palestrante.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao1[].local</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Local onde a atividade será realizada.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao1[].palavras_chaves</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Palavras-chave relacionadas à atividade.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de atividades da segunda edição do evento.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao2[].categoria</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Categoria da atividade (ex.: "Palestra", "Minicurso").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao2[].titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título da atividade.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao2[].convidado</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome do convidado ou palestrante.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao2[].local</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Local onde a atividade será realizada.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao2[].palavras_chaves</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Palavras-chave relacionadas à atividade.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_lista_minicursos_palestras.js.html">data/lista_minicursos_palestras.js</a>, <a href="data_lista_minicursos_palestras.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const atividade = listaMinicursosPalestras.edicao1[0];
+console.log(atividade.titulo); // Saída: "Empreendedorismo e Incubação de Empresas"</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="lista_edicoes_anteriores"><span class="type-signature">(constant) </span>lista_edicoes_anteriores<span class="type-signature"> :Array.&lt;Object></span></h4>
+
+
+
+
+<div class="description">
+    Lista de edições anteriores do evento SEMAC, com detalhes sobre cada edição,
+incluindo título, descrição e uma galeria de imagens associadas.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Object></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome da edição (ex.: "1ª EDIÇÃO", "2ª EDIÇÃO").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título da edição, que pode incluir HTML para formatação.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>descricao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Descrição detalhada da edição.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de imagens associadas à edição.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens[].src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Caminho para a imagem.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens[].size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tamanho da imagem (ex.: "small", "medium", "large").</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_lista_edicoes_anteriores.js.html">data/lista_edicoes_anteriores.js</a>, <a href="data_lista_edicoes_anteriores.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const edicao = lista_edicoes_anteriores[0];
+console.log(edicao.titulo); // Saída: "III Semana das Engenharias de&lt;br />Automação e Computação"</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="obrasAnais"><span class="type-signature">(constant) </span>obrasAnais<span class="type-signature"> :Array.&lt;Object></span></h4>
+
+
+
+
+<div class="description">
+    Lista de obras dos anais do evento, organizada por edição, contendo informações detalhadas de cada obra.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Object></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome da edição (ex.: "primeira", "segunda").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>informacoes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de obras associadas à edição.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>informacoes[].title</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título da obra.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>informacoes[].owner</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome completo do autor da obra.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>informacoes[].keywords</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Palavras-chave associadas à obra.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>informacoes[].link</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Link para acessar a obra.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_obras_anais.js.html">data/obras_anais.js</a>, <a href="data_obras_anais.js.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const primeiraObra = obrasAnais[0].informacoes[0];
+console.log(primeiraObra.title); // Saída: "TITULO DA OBRA 0"</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="programacaoDias"><span class="type-signature">(constant) </span>programacaoDias<span class="type-signature"> :Array.&lt;Object></span></h4>
+
+
+
+
+<div class="description">
+    Lista de programação diária do evento, contendo informações detalhadas sobre cada dia, turnos e eventos programados.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Object></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Data e dia da semana para a programação (ex.: "09/12-SEGUNDA").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de turnos e seus respectivos eventos para o dia.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].dia</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Descrição do dia do evento (ex.: "1° DIA").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].turno</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Período do turno do evento (ex.: "TURNO VESPERTINO").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].eventos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de eventos programados para o turno.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].eventos[].horario</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Horário do evento (ex.: "13h - 15h").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].eventos[].titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título do evento (ex.: "PALESTRA DE ABERTURA").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].eventos[].tipo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tipo do evento (ex.: "PALESTRA", "MINICURSO", "HACKATON").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos[].eventos[].palestrantes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de palestrantes do evento.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_lista_programacao_terceira_semana.js.html">data/lista_programacao_terceira_semana.js</a>, <a href="data_lista_programacao_terceira_semana.js.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const primeiroDia = programacaoDias[0];
+console.log(primeiroDia.data); // Saída: "09/12-SEGUNDA"
+console.log(primeiroDia.eventos[0].eventos[0].titulo); // Saída: "PALESTRA DE ABERTURA"</code></pre>
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Accordion"><span class="type-signature"></span>Accordion<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Accordion para exibir conteúdo de forma expansível e colapsável.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>icon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">URL ou caminho do ícone a ser exibido no título do accordion.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>title</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título a ser exibido no cabeçalho do accordion.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Conteúdo a ser exibido quando o accordion estiver expandido.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isOpen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Define se o accordion está aberto (`true`) ou fechado (`false`).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onToggle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Função chamada ao clicar no cabeçalho do accordion para alternar seu estado.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_accordion_Accordion.jsx.html">components/accordion/Accordion.jsx</a>, <a href="components_accordion_Accordion.jsx.html#line28">line 28</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Elemento JSX que representa o item do accordion.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso
+&lt;Accordion
+  icon="/path/to/icon.svg"
+  title="Título do Accordion"
+  content="Conteúdo do Accordion"
+  isOpen={true}
+  onToggle={() => console.log('Alternar accordion')}
+/></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Accordion"><span class="type-signature"></span>Accordion<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Accordion para exibir informações sobre um artigo ou obra de Anais, incluindo título, autor, palavras-chave e link de download.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>title</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título do artigo ou obra a ser exibido.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>owner</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome do autor do artigo ou obra.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>keywords</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Palavras-chave relacionadas ao artigo ou obra.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>link</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">URL do link para download do artigo ou obra.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>isOpen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Define se o accordion está aberto (`true`) ou fechado (`false`).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onToggle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Função chamada ao clicar no cabeçalho do accordion para alternar seu estado.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_accordion-anais_AccordionAnais.jsx.html">components/accordion-anais/AccordionAnais.jsx</a>, <a href="components_accordion-anais_AccordionAnais.jsx.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Elemento JSX que representa o item do accordion para exibir informações de Anais.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso
+&lt;Accordion
+  title="Título da Obra"
+  owner="Nome do Autor"
+  keywords="Palavra1, Palavra2, Palavra3"
+  link="/path/to/download"
+  isOpen={true}
+  onToggle={() => console.log('Alternar accordion')}
+/></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="AnaisTrabalhos"><span class="type-signature"></span>AnaisTrabalhos<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente AnaisTrabalhos que exibe os anais da SEMAC em uma estrutura de acordeão.
+Permite alternar entre edições diferentes e expandir cada obra para ver mais detalhes.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_edicoes-anteriores_anais-trabalhos_AnaisTrabalhos.jsx.html">sections/edicoes-anteriores/anais-trabalhos/AnaisTrabalhos.jsx</a>, <a href="sections_edicoes-anteriores_anais-trabalhos_AnaisTrabalhos.jsx.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de anais da SEMAC com uma lista de obras e possibilidade de alternar entre edições.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;AnaisTrabalhos /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="App"><span class="type-signature"></span>App<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente App que define as rotas principais da aplicação SEMAC, gerenciando a navegação
+e incluindo o componente RouteTitleUpdater para atualizar o título da página com base na rota.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="App.jsx.html">App.jsx</a>, <a href="App.jsx.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Aplicativo principal com rotas configuradas para a página inicial, terceira edição, edições anteriores e uma página 404.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;App /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ButtonGroup"><span class="type-signature"></span>ButtonGroup<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente de grupo de botões de navegação do carrossel para dispositivos específicos.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>device</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tipo de dispositivo, usado para posicionamento.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Função para avançar no carrossel.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previous</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Função para retroceder no carrossel.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_palestrantes_Palestrantes.jsx.html">sections/home/palestrantes/Palestrantes.jsx</a>, <a href="sections_home_palestrantes_Palestrantes.jsx.html#line34">line 34</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Botões de navegação personalizados.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ButtonGroup"><span class="type-signature"></span>ButtonGroup<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente de grupo de botões de navegação personalizado para o carrossel, exibindo setas à esquerda e à direita.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>next</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Função para avançar no carrossel.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>previous</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Função para retroceder no carrossel.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_sobre-evento_SobreEvento.jsx.html">sections/home/sobre-evento/SobreEvento.jsx</a>, <a href="sections_home_sobre-evento_SobreEvento.jsx.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Botões de navegação personalizados.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="CarouselMinicursos"><span class="type-signature"></span>CarouselMinicursos<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente CarouselMinicursos para exibir uma lista de minicursos em um carrossel responsivo.
+Utiliza o Swiper para navegação e paginação entre slides.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>listaMinicursos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de minicursos a serem exibidos no carrossel.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>categoria</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Categoria do minicurso (ex.: "Tecnologia", "Ciência").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título do minicurso.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>convidado</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome do convidado que ministrará o minicurso.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>local</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Local onde o minicurso será realizado.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>palavras_chaves</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Palavras-chave associadas ao minicurso.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_carousel-minicursos_CarouselMinicursos.jsx.html">components/carousel-minicursos/CarouselMinicursos.jsx</a>, <a href="components_carousel-minicursos_CarouselMinicursos.jsx.html#line47">line 47</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Carrossel de minicursos com navegação e paginação.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const minicursos = [
+  {
+    categoria: "Tecnologia",
+    titulo: "Introdução ao React",
+    convidado: "João da Silva",
+    local: "Auditório 1",
+    palavras_chaves: "JavaScript, Frontend, SPA"
+  },
+  {
+    categoria: "Ciência",
+    titulo: "Laboratório de Física",
+    convidado: "Maria Pereira",
+    local: "Laboratório 3",
+    palavras_chaves: "Experimentos, Física"
+  }
+];
+
+&lt;CarouselMinicursos listaMinicursos={minicursos} /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="CarouselProgramacao"><span class="type-signature"></span>CarouselProgramacao<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente CarouselProgramacao para exibir uma programação de eventos em um formato de carrossel, com data, turno e detalhes dos eventos.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Data do dia da programação (ex.: "25/10/2024").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de turnos do dia, cada um contendo eventos específicos.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dia</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Dia da semana (ex.: "Segunda-feira").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>turno</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Turno dos eventos (ex.: "Manhã", "Tarde").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de eventos para o turno especificado.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>horario</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Horário do evento (ex.: "09:00").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título do evento (ex.: "Palestra de Abertura").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>palestrantes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de palestrantes do evento.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tipo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tipo do evento (ex.: "Workshop", "Palestra").</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_carousel-programacao_CarouselProgramacao.jsx.html">components/carousel-programacao/CarouselProgramacao.jsx</a>, <a href="components_carousel-programacao_CarouselProgramacao.jsx.html#line58">line 58</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Carrossel de programação com data, turnos e detalhes de cada evento.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const data = "25/10/2024";
+const eventos = [
+  {
+    dia: "Segunda-feira",
+    turno: "Manhã",
+    eventos: [
+      {
+        horario: "09:00",
+        titulo: "Palestra de Abertura",
+        palestrantes: ["Ana Silva", "Carlos Souza"],
+        tipo: "Palestra"
+      },
+      {
+        horario: "10:30",
+        titulo: "Workshop de React",
+        palestrantes: ["João Almeida"],
+        tipo: "Workshop"
+      }
+    ]
+  },
+  {
+    dia: "Segunda-feira",
+    turno: "Tarde",
+    eventos: [
+      {
+        horario: "14:00",
+        titulo: "Painel de Discussão",
+        palestrantes: ["Maria Costa", "Paulo Pereira"],
+        tipo: "Painel"
+      }
+    ]
+  }
+];
+
+&lt;CarouselProgramacao data={data} eventos={eventos} /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Colaboradores"><span class="type-signature"></span>Colaboradores<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Colaboradores que exibe uma seção de agradecimento aos colaboradores do evento.
+Inclui uma mensagem de agradecimento e uma coleção de logotipos dos colaboradores, cada um com um link para o site da empresa.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_common_colaboradores_Colaboradores.jsx.html">sections/common/colaboradores/Colaboradores.jsx</a>, <a href="sections_common_colaboradores_Colaboradores.jsx.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de colaboradores com mensagem de agradecimento e logotipos clicáveis das empresas parceiras.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Colaboradores /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Eventos"><span class="type-signature"></span>Eventos<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Eventos que exibe um carrossel com imagens de eventos passados da SEMAC.
+Inclui uma breve descrição e link para uma página com informações adicionais sobre as edições anteriores.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_eventos_Eventos.jsx.html">sections/home/eventos/Eventos.jsx</a>, <a href="sections_home_eventos_Eventos.jsx.html#line48">line 48</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de eventos passados com um carrossel de imagens e um link para mais detalhes.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Eventos /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Faq"><span class="type-signature"></span>Faq<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Faq que exibe uma lista de perguntas frequentes em formato de acordeão.
+Cada item da lista pode ser expandido para mostrar o conteúdo relacionado à pergunta.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_common_faq_Faq.jsx.html">sections/common/faq/Faq.jsx</a>, <a href="sections_common_faq_Faq.jsx.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de perguntas frequentes com uma lista de itens de acordeão para interação.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Faq /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Footer"><span class="type-signature"></span>Footer<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Footer que exibe o rodapé do site com informações de contato, links úteis, localização e redes sociais.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>links</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de links para navegação no rodapé.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>href</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Âncora ou URL do link.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Texto de exibição do link.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_common_footer_Footer.jsx.html">sections/common/footer/Footer.jsx</a>, <a href="sections_common_footer_Footer.jsx.html#line30">line 30</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Rodapé do site com informações institucionais, contato e redes sociais.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const links = [
+  { href: "#sobre", text: "Sobre" },
+  { href: "#programacao", text: "Programação" },
+];
+
+&lt;Footer links={links} /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="GaleriaEdicao"><span class="type-signature"></span>GaleriaEdicao<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente GaleriaEdicao para exibir uma galeria de imagens com funcionalidade de zoom em uma lightbox.
+Permite a visualização de imagens em tela cheia ao clicar em uma delas.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>imagens</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Lista de imagens para exibição na galeria.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">URL da imagem.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tamanho da imagem para definir estilos (ex.: "small", "medium", "large").</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_galeria-edicao_GaleriaEdicao.jsx.html">components/galeria-edicao/GaleriaEdicao.jsx</a>, <a href="components_galeria-edicao_GaleriaEdicao.jsx.html#line28">line 28</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Galeria de imagens com suporte a zoom e visualização em lightbox.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const imagens = [
+  { src: "https://example.com/image1.jpg", size: "small" },
+  { src: "https://example.com/image2.jpg", size: "large" },
+  { src: "https://example.com/image3.jpg", size: "medium" }
+];
+
+&lt;GaleriaEdicao imagens={imagens} /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Hero"><span class="type-signature"></span>Hero<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Hero que exibe a seção inicial da página principal da SEMAC.
+Contém um logotipo adaptado para desktop e mobile, menu de navegação, chamada para a 3ª edição do evento e um botão de rolagem suave para a seção "Sobre o Evento".
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_hero_Hero.jsx.html">sections/home/hero/Hero.jsx</a>, <a href="sections_home_hero_Hero.jsx.html#line22">line 22</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção inicial da página principal da SEMAC, com menu, logotipo e link para a 3ª edição do evento.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Hero /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="HeroEdicoesAnteriores"><span class="type-signature"></span>HeroEdicoesAnteriores<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente HeroEdicoesAnteriores que exibe o cabeçalho da página de edições anteriores,
+incluindo a navegação, animação e um título com descrição.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_edicoes-anteriores_hero-edicoes-anteriores_HeroEdicoesAnteriores.jsx.html">sections/edicoes-anteriores/hero-edicoes-anteriores/HeroEdicoesAnteriores.jsx</a>, <a href="sections_edicoes-anteriores_hero-edicoes-anteriores_HeroEdicoesAnteriores.jsx.html#line22">line 22</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Cabeçalho da página de edições anteriores, com animação, navegação e informações introdutórias.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;HeroEdicoesAnteriores /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="HeroTerceiraEdicao"><span class="type-signature"></span>HeroTerceiraEdicao<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente HeroTerceiraEdicao que exibe o cabeçalho da página da terceira edição da SEMAC.
+Inclui um menu de navegação, informações sobre o evento e uma animação.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_terceira-edicao_hero_HeroTerceiraEdicao.jsx.html">sections/terceira-edicao/hero/HeroTerceiraEdicao.jsx</a>, <a href="sections_terceira-edicao_hero_HeroTerceiraEdicao.jsx.html#line22">line 22</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Cabeçalho da página da terceira edição da SEMAC, com animação, navegação e informações introdutórias sobre o evento.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;HeroTerceiraEdicao /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="HomePage"><span class="type-signature"></span>HomePage<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente principal da página inicial, que agrupa várias seções do site,
+incluindo informações sobre o evento, minicursos, palestrantes, FAQ, colaboradores e mais.
+
+Ao ser carregado, o componente desloca a janela para o topo da página de forma suave.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="pages_HomePage.jsx.html">pages/HomePage.jsx</a>, <a href="pages_HomePage.jsx.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Página inicial completa, com seções organizadas e um botão para voltar ao topo.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;HomePage /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Minicursos"><span class="type-signature"></span>Minicursos<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Minicursos que exibe uma lista de minicursos e palestras em um carrossel.
+Utiliza um conjunto de dados provenientes de diferentes edições do evento e os exibe em um carrossel interativo.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_common_minicursos_Minicursos.jsx.html">sections/common/minicursos/Minicursos.jsx</a>, <a href="sections_common_minicursos_Minicursos.jsx.html#line18">line 18</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de minicursos e palestras, com um título, descrição e carrossel dos eventos oferecidos.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Minicursos /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="NotFoundPage"><span class="type-signature"></span>NotFoundPage<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente NotFoundPage que exibe uma mensagem de erro "404 - Página não encontrada".
+Inclui um link para redirecionar o usuário à página inicial e uma imagem ilustrativa.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="pages_NotFoundPage.jsx.html">pages/NotFoundPage.jsx</a>, <a href="pages_NotFoundPage.jsx.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Página de erro 404 com mensagem, imagem e link para a página inicial.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;NotFoundPage /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Numeros"><span class="type-signature"></span>Numeros<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Numeros que exibe estatísticas animadas sobre o evento SEMAC.
+As contagens são animadas à medida que o componente entra em exibição na tela.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_numeros_Numeros.jsx.html">sections/home/numeros/Numeros.jsx</a>, <a href="sections_home_numeros_Numeros.jsx.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de números animados com contagens de palestrantes, minicursos, parceiros e oficinas.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Numeros /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Palestrantes"><span class="type-signature"></span>Palestrantes<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Palestrantes que exibe um carrossel de palestrantes do evento SEMAC.
+Contém uma descrição sobre os palestrantes e opções de navegação personalizadas para desktop e mobile.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_palestrantes_Palestrantes.jsx.html">sections/home/palestrantes/Palestrantes.jsx</a>, <a href="sections_home_palestrantes_Palestrantes.jsx.html#line86">line 86</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de palestrantes com carrossel animado e navegação personalizada.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Palestrantes /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="PreviousEditions"><span class="type-signature"></span>PreviousEditions<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente PreviousEditions que exibe a página das edições anteriores do evento.
+Contém seções de informações sobre edições passadas, trabalhos apresentados, colaboradores e um botão para voltar ao topo da página.
+
+Ao montar, o componente faz a rolagem suave da página até o topo.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="pages_PreviousEditions.jsx.html">pages/PreviousEditions.jsx</a>, <a href="pages_PreviousEditions.jsx.html#line23">line 23</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Página de edições anteriores com seções de herói, sobre a edição, trabalhos, colaboradores e um botão de voltar ao topo.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;PreviousEditions /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Programacao"><span class="type-signature"></span>Programacao<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Programacao que exibe a programação diária do evento SEMAC.
+Permite navegar entre os dias do evento, exibindo os detalhes de cada dia selecionado.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_terceira-edicao_programacao_Programacao.jsx.html">sections/terceira-edicao/programacao/Programacao.jsx</a>, <a href="sections_terceira-edicao_programacao_Programacao.jsx.html#line19">line 19</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de programação com navegação por dias e carrossel de eventos do dia atual.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Programacao /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="RouteTitleUpdater"><span class="type-signature"></span>RouteTitleUpdater<span class="signature">()</span><span class="type-signature"> &rarr; {null}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente RouteTitleUpdater atualiza o título da página com base na rota atual.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="App.jsx.html">App.jsx</a>, <a href="App.jsx.html#line19">line 19</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Não renderiza nada visualmente, apenas atualiza o título do documento.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">null</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso dentro de um roteador:
+&lt;RouteTitleUpdater /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ScrollToTopButton"><span class="type-signature"></span>ScrollToTopButton<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente ScrollToTopButton exibe um botão flutuante para rolar a página suavemente até uma seção específica.
+O botão só é visível quando o usuário rola a página para além da seção alvo.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>heroId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">ID do elemento (seção) para o qual a página deve rolar quando o botão for clicado.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_scroll-top-button_ScrollToTopButton.jsx.html">components/scroll-top-button/ScrollToTopButton.jsx</a>, <a href="components_scroll-top-button_ScrollToTopButton.jsx.html#line19">line 19</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Botão de rolagem para o topo, visível quando o usuário rola a página para baixo.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso com um elemento de ID "hero-section"
+&lt;ScrollToTopButton heroId="hero-section" /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="SobreEdicao"><span class="type-signature"></span>SobreEdicao<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente SobreEdicao que exibe informações detalhadas sobre cada edição passada da SEMAC.
+Cada edição inclui um título, descrição, galeria de imagens e carrossel de minicursos e palestras.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_edicoes-anteriores_sobre-edicao_SobreEdicao.jsx.html">sections/edicoes-anteriores/sobre-edicao/SobreEdicao.jsx</a>, <a href="sections_edicoes-anteriores_sobre-edicao_SobreEdicao.jsx.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção detalhada sobre edições anteriores da SEMAC, com descrição, galeria e carrossel de eventos.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;SobreEdicao /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="SobreEvento"><span class="type-signature"></span>SobreEvento<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente SobreEvento que descreve a SEMAC e as categorias de atividades oferecidas, como minicursos, palestras, painéis e networking.
+Exibe as categorias com ícones e descrições, utilizando um carrossel em dispositivos móveis.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_home_sobre-evento_SobreEvento.jsx.html">sections/home/sobre-evento/SobreEvento.jsx</a>, <a href="sections_home_sobre-evento_SobreEvento.jsx.html#line91">line 91</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de informações sobre o evento SEMAC com categorias de atividades, adaptada para desktop e mobile.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;SobreEvento /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="SobreTerceiraEdicao"><span class="type-signature"></span>SobreTerceiraEdicao<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente SobreTerceiraEdicao que exibe informações sobre a terceira edição do evento SEMAC.
+Apresenta uma introdução sobre o evento, destacando atividades como palestras, minicursos e workshops.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_terceira-edicao_sobre_SobreTerceiraEdicao.jsx.html">sections/terceira-edicao/sobre/SobreTerceiraEdicao.jsx</a>, <a href="sections_terceira-edicao_sobre_SobreTerceiraEdicao.jsx.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção informativa sobre a terceira edição do evento SEMAC, com descrições de atividades e um botão de inscrição.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;SobreTerceiraEdicao /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="TextoEdicao"><span class="type-signature"></span>TextoEdicao<span class="signature">(props)</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente TextoEdicao exibe informações sobre uma edição específica, incluindo título, edição e descrição.
+A cor do rótulo de edição muda com base no valor de `edicao`.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Propriedades do componente.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>edicao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Nome ou rótulo da edição (ex.: "1ª EDIÇÃO", "2ª EDIÇÃO").</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>titulo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Título da edição, renderizado como HTML seguro.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>descricao</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Descrição da edição.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_texto-edicao_TextoEdicao.jsx.html">components/texto-edicao/TextoEdicao.jsx</a>, <a href="components_texto-edicao_TextoEdicao.jsx.html#line24">line 24</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Componente com título, edição e descrição formatados.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso com edição, título e descrição
+&lt;TextoEdicao
+  edicao="2ª EDIÇÃO"
+  titulo="Bem-vindo à &lt;strong>nova edição&lt;/strong>!"
+  descricao="Descrição detalhada sobre esta edição."
+/></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ThirdEditionPage"><span class="type-signature"></span>ThirdEditionPage<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente ThirdEditionPage que exibe a página da terceira edição do evento.
+Inclui seções detalhadas sobre a edição, trabalhos apresentados, programação do evento, colaboradores, e um botão para voltar ao topo.
+
+Ao montar, o componente faz a rolagem suave da página até o topo.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="pages_ThirdEditionPage.jsx.html">pages/ThirdEditionPage.jsx</a>, <a href="pages_ThirdEditionPage.jsx.html#line26">line 26</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Página da terceira edição com seções de herói, sobre a edição, números, trabalhos, FAQ, programação, colaboradores e um botão para voltar ao topo.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;ThirdEditionPage /></code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Trabalhos"><span class="type-signature"></span>Trabalhos<span class="signature">()</span><span class="type-signature"> &rarr; {JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Componente Trabalhos que exibe uma chamada para submissão de trabalhos no evento SEMAC.
+Contém uma imagem ilustrativa, descrição e um botão para redirecionar para a página de submissão.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sections_terceira-edicao_trabalhos_Trabalhos.jsx.html">sections/terceira-edicao/trabalhos/Trabalhos.jsx</a>, <a href="sections_terceira-edicao_trabalhos_Trabalhos.jsx.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Seção de chamada para submissão de trabalhos no evento SEMAC, com uma descrição, imagem e botão de ação.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// Exemplo de uso básico:
+&lt;Trabalhos /></code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -2,9 +2,26 @@ import React, { useState } from "react";
 import Accordion from "../../../components/accordion/Accordion";
 import "./Faq.css";
 import faqItems from "../../../data/perguntas_faq";
+
+/**
+ * Componente Faq que exibe uma lista de perguntas frequentes em formato de acordeão.
+ * Cada item da lista pode ser expandido para mostrar o conteúdo relacionado à pergunta.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Faq />
+ *
+ * @returns {JSX.Element} Seção de perguntas frequentes com uma lista de itens de acordeão para interação.
+ */
 const Faq = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  /**
+   * Manipula a abertura e fechamento de um item do acordeão.
+   *
+   * @param {number} index - Índice do item a ser alternado.
+   */
   const handleAccordionToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

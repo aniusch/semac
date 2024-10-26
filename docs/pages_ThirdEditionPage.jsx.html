@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pages/ThirdEditionPage.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pages/ThirdEditionPage.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useEffect } from "react";
+import Numeros from "../sections/home/numeros/Numeros";
+import Faq from "../sections/common/faq/Faq";
+import Colaboradores from "../sections/common/colaboradores/Colaboradores";
+import ScrollToTopButton from "../components/scroll-top-button/ScrollToTopButton";
+import Footer from "../sections/common/footer/Footer";
+import HeroTerceiraEdicao from "../sections/terceira-edicao/hero/HeroTerceiraEdicao";
+import SobreTerceiraEdicao from "../sections/terceira-edicao/sobre/SobreTerceiraEdicao";
+import Trabalhos from "../sections/terceira-edicao/trabalhos/Trabalhos";
+import Programacao from "../sections/terceira-edicao/programacao/Programacao";
+import linksPaginas from "../data/links_paginas";
+
+/**
+ * Componente ThirdEditionPage que exibe a página da terceira edição do evento.
+ * Inclui seções detalhadas sobre a edição, trabalhos apresentados, programação do evento, colaboradores, e um botão para voltar ao topo.
+ *
+ * Ao montar, o componente faz a rolagem suave da página até o topo.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * &lt;ThirdEditionPage />
+ *
+ * @returns {JSX.Element} Página da terceira edição com seções de herói, sobre a edição, números, trabalhos, FAQ, programação, colaboradores e um botão para voltar ao topo.
+ */
+function ThirdEditionPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+  return (
+    &lt;>
+      &lt;HeroTerceiraEdicao />
+      &lt;SobreTerceiraEdicao />
+      &lt;Numeros />
+      &lt;Trabalhos />
+      &lt;Faq />
+      &lt;Programacao />
+      &lt;Colaboradores />
+      &lt;Footer links={linksPaginas.thirdEditionPageLinks} />
+      &lt;ScrollToTopButton heroId={'hero-terceira-edicao'} />
+    &lt;/>
+  );
+}
+
+export default ThirdEditionPage;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: data/lista_logoscolaboradores.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: data/lista_logoscolaboradores.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import Amaggi from "../assets/colaboradores/amaggi.png";
+import Nuvem from "../assets/colaboradores/nuvem.svg";
+import RedBalloon from "../assets/colaboradores/red_balloon.png";
+import Aromasil from "../assets/colaboradores/aromasil.png";
+import Aptum from "../assets/colaboradores/aptum.png";
+import CasaViva from "../assets/colaboradores/casa_viva.png";
+import DablioPresentes from "../assets/colaboradores/dablio_presentes.png";
+import InfoCorp from "../assets/colaboradores/infocorp.png";
+import NetSystemsTech from "../assets/colaboradores/net_systems_tech.png";
+import OperCard from "../assets/colaboradores/oper_card.png";
+import Sicredi from "../assets/colaboradores/sicredi.png";
+import ZingerSkills from "../assets/colaboradores/zinger_skills.png";
+
+/**
+ * Lista de edições anteriores do evento SEMAC, com detalhes sobre cada edição,
+ * incluindo título, descrição e uma galeria de imagens associadas.
+ *
+ * @constant
+ * @type {Array&lt;Object>}
+ * @property {string} edicao - Nome da edição (ex.: "1ª EDIÇÃO", "2ª EDIÇÃO").
+ * @property {string} titulo - Título da edição, que pode incluir HTML para formatação.
+ * @property {string} descricao - Descrição detalhada da edição.
+ * @property {Array&lt;Object>} imagens - Lista de imagens associadas à edição.
+ * @property {string} imagens[].src - Caminho para a imagem.
+ * @property {string} imagens[].size - Tamanho da imagem (ex.: "small", "medium", "large").
+ *
+ * @example
+ * const edicao = lista_edicoes_anteriores[0];
+ * console.log(edicao.titulo); // Saída: "III Semana das Engenharias de&lt;br />Automação e Computação"
+ */
+const empresasLogos = [
+    { href: "https://www.amaggi.com.br/", src: Amaggi, alt: "Logo Amaggi" },
+    { href: "https://nuvem.net/", src: Nuvem, alt: "Logo Nuvem" },
+    { href: "https://redballoon.com.br/", src: RedBalloon, alt: "Logo RedBalloon" },
+    { href: "https://www.aromasil.com.br/", src: Aromasil, alt: "Logo Aromasil" },
+    { href: "https://mkt.aptum.com.br/aptum", src: Aptum, alt: "Logo Aptum" },
+    { href: "https://flow.page/casavivacba", src: CasaViva, alt: "Logo Casa Viva" },
+    { href: "https://dabliopresentes.com.br/", src: DablioPresentes, alt: "Logo Dablio Presentes" },
+    { href: "https://infocorpjr.com.br/", src: InfoCorp, alt: "Logo InfoCorp" },
+    { href: "https://www.netsystemtecnologia.com.br/site2021/index.html", src: NetSystemsTech, alt: "Logo Net Systems Tech" },
+    { href: "https://opercard.com.br/", src: OperCard, alt: "Logo Oper Card" },
+    { href: "https://www.sicredi.com.br/", src: Sicredi, alt: "Logo Sicredi" },
+    { href: "https://escolazinger.com.br/", src: ZingerSkills, alt: "Logo Zinger Skills" }
+];
+
+export default empresasLogos;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

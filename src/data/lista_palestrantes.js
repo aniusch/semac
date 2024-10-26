@@ -24,6 +24,19 @@ import Palestrante_27 from "../assets/palestrantes/Palestrante_2.png";
 import Palestrante_33 from "../assets/palestrantes/Gustavo-Post-Sabin.png";
 import Palestrante_37 from "../assets/palestrantes/Rodrigo-Oliveira.png";
 
+/**
+ * Lista de palestrantes do evento, com informações detalhadas sobre cada palestrante, incluindo nome, descrição e imagem.
+ *
+ * @constant
+ * @type {Array<Object>}
+ * @property {string} nome - Nome do palestrante.
+ * @property {string} descricao - Breve biografia ou descrição do palestrante.
+ * @property {string} imagem - Caminho para a imagem do palestrante.
+ *
+ * @example
+ * const primeiroPalestrante = Palestrantes_list[0];
+ * console.log(primeiroPalestrante.nome); // Saída: "Prof. Dr. Renan Aranha"
+ */
 const Palestrantes_list = [
   {
     nome: "Prof. Dr. Renan Aranha",

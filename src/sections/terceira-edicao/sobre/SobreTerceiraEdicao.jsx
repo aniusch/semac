@@ -1,6 +1,17 @@
 import React from 'react';
 import './SobreTerceiraEdicao.css'; 
 
+/**
+ * Componente SobreTerceiraEdicao que exibe informações sobre a terceira edição do evento SEMAC.
+ * Apresenta uma introdução sobre o evento, destacando atividades como palestras, minicursos e workshops.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <SobreTerceiraEdicao />
+ *
+ * @returns {JSX.Element} Seção informativa sobre a terceira edição do evento SEMAC, com descrições de atividades e um botão de inscrição.
+ */
 const SobreTerceiraEdicao = () => {
   return (
     <section id='sobre-terceira-edicao' className="event-section">

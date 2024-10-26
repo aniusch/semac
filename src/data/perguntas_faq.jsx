@@ -4,6 +4,38 @@ import piggy from "../assets/icons/piggy-coin.svg";
 import check from "../assets/icons/check.svg";
 import phone from "../assets/icons/phone.svg";
 
+/**
+ * Lista de itens de FAQ (Perguntas Frequentes) para exibir informações sobre o evento.
+ * Cada item contém um ícone, título e conteúdo explicativo.
+ *
+ * @constant
+ * @type {Array<Object>}
+ * @property {string} icon - Caminho para o ícone representativo do item.
+ * @property {string} title - Título ou pergunta do item de FAQ.
+ * @property {string|JSX.Element} content - Conteúdo ou resposta associado ao item de FAQ.
+ *
+ * @example
+ * const faqItems = [
+ *   {
+ *     icon: user,
+ *     title: "Quando normalmente o evento ocorre?",
+ *     content: "O evento é realizado anualmente, geralmente no mês de dezembro. As datas exatas são definidas conforme o calendário da organização."
+ *   },
+ *   {
+ *     icon: checklist,
+ *     title: "Como faço para me inscrever?",
+ *     content: (
+ *       <>
+ *         Para se inscrever, acesse o site da edição e {" "}
+ *         <a href="https://eventosacademicos.ufmt.br/index.php/semac/" target="_blank" rel="noopener noreferrer">
+ *           se inscreva
+ *         </a>.
+ *       </>
+ *     )
+ *   },
+ *   // Outros itens
+ * ];
+ */
 const faqItems = [
   {
     icon: user,

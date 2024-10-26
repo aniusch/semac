@@ -1,3 +1,23 @@
+/**
+ * Lista de programação diária do evento, contendo informações detalhadas sobre cada dia, turnos e eventos programados.
+ *
+ * @constant
+ * @type {Array<Object>}
+ * @property {string} data - Data e dia da semana para a programação (ex.: "09/12-SEGUNDA").
+ * @property {Array<Object>} eventos - Lista de turnos e seus respectivos eventos para o dia.
+ * @property {string} eventos[].dia - Descrição do dia do evento (ex.: "1° DIA").
+ * @property {string} eventos[].turno - Período do turno do evento (ex.: "TURNO VESPERTINO").
+ * @property {Array<Object>} eventos[].eventos - Lista de eventos programados para o turno.
+ * @property {string} eventos[].eventos[].horario - Horário do evento (ex.: "13h - 15h").
+ * @property {string} eventos[].eventos[].titulo - Título do evento (ex.: "PALESTRA DE ABERTURA").
+ * @property {string} eventos[].eventos[].tipo - Tipo do evento (ex.: "PALESTRA", "MINICURSO", "HACKATON").
+ * @property {Array<string>} eventos[].eventos[].palestrantes - Lista de palestrantes do evento.
+ *
+ * @example
+ * const primeiroDia = programacaoDias[0];
+ * console.log(primeiroDia.data); // Saída: "09/12-SEGUNDA"
+ * console.log(primeiroDia.eventos[0].eventos[0].titulo); // Saída: "PALESTRA DE ABERTURA"
+ */
 const programacaoDias = [
     {
         data: "09/12-SEGUNDA", 

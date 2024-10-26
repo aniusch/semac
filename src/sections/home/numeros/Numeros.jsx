@@ -1,10 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import "./Numeros.css";
 
+/**
+ * Componente Numeros que exibe estatísticas animadas sobre o evento SEMAC.
+ * As contagens são animadas à medida que o componente entra em exibição na tela.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Numeros />
+ *
+ * @returns {JSX.Element} Seção de números animados com contagens de palestrantes, minicursos, parceiros e oficinas.
+ */
 const Numeros = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    /**
+     * Anima as contagens de números dos elementos com a classe `animate-number`.
+     */
     const animateNumbers = () => {
       const elements = document.querySelectorAll(".animate-number");
       elements.forEach((element) => {
@@ -28,6 +42,9 @@ const Numeros = () => {
       });
     };
 
+    /**
+     * Observer para iniciar a animação dos números ao entrar na viewport.
+     */
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -37,7 +54,7 @@ const Numeros = () => {
           }
         });
       },
-      { threshold: 0.8 } 
+      { threshold: 0.8 }
     );
 
     if (sectionRef.current) {

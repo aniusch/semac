@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: sections/terceira-edicao/trabalhos/Trabalhos.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: sections/terceira-edicao/trabalhos/Trabalhos.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import "./Trabalhos.css";
+import TrabalhosImg from "../../../assets/trabalhos/img-trabalhos.png";
+
+/**
+ * Componente Trabalhos que exibe uma chamada para submissão de trabalhos no evento SEMAC.
+ * Contém uma imagem ilustrativa, descrição e um botão para redirecionar para a página de submissão.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * &lt;Trabalhos />
+ *
+ * @returns {JSX.Element} Seção de chamada para submissão de trabalhos no evento SEMAC, com uma descrição, imagem e botão de ação.
+ */
+const Trabalhos = () => {
+  return (
+    &lt;div id="trabalhos">
+      &lt;div className="trabalhos-container">
+        &lt;div>
+          &lt;img
+            className="img-container"
+            src={TrabalhosImg}
+            alt="TrabalhosImg"
+          />
+        &lt;/div>
+        &lt;div className="trabalhos-col">
+          &lt;hr className="bar" />
+          &lt;h1 className="maintext">
+            Que tal ter o {&lt;span className="cor-degrade">seu trabalho&lt;/span>}
+          &lt;/h1>
+          &lt;h1 className="maintext">exposto um dos nossos painéis?&lt;/h1>
+          &lt;p className="subtext">
+            Submeta seu projeto e mostre o que você pode fazer! Compartilhe suas
+            pesquisas, protótipos ou soluções tecnológicas, receba feedback
+            valioso e destaque-se na comunidade acadêmica e profissional. Esta é
+            a sua chance de brilhar e conectar-se com outros talentos!
+          &lt;/p>
+          &lt;button
+            className="btn-trabalhos"
+            onClick={() => {
+              window.open(
+                "https://eventosacademicos.ufmt.br/index.php/semac/",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+          >
+            Realizar Submissão ➔
+          &lt;/button>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  );
+};
+
+export default Trabalhos;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

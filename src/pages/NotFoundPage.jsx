@@ -2,6 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NotFoundImage from "../assets/404.png";
 
+/**
+ * Componente NotFoundPage que exibe uma mensagem de erro "404 - Página não encontrada".
+ * Inclui um link para redirecionar o usuário à página inicial e uma imagem ilustrativa.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <NotFoundPage />
+ *
+ * @returns {JSX.Element} Página de erro 404 com mensagem, imagem e link para a página inicial.
+ */
 const NotFoundPage = () => {
   return (
     <div
