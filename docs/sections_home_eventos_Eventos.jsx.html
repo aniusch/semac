@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: sections/home/eventos/Eventos.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: sections/home/eventos/Eventos.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import eventos1 from "../../../assets/eventos/eventos1.jpg";
+import eventos2 from "../../../assets/eventos/eventos2.png";
+import eventos3 from "../../../assets/eventos/eventos3.jpg";
+import eventos4 from "../../../assets/eventos/eventos4.jpg";
+import eventos5 from "../../../assets/eventos/eventos5.jpg";
+import eventos6 from "../../../assets/eventos/eventos6.jpg";
+import "./Eventos.css";
+import { Link } from "react-router-dom";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+  },
+  tablet: {
+    breakpoint: { max: 768, min: 464 },
+    items: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+const eventImages = [
+  eventos6,
+  eventos1,
+  eventos2,
+  eventos3,
+  eventos4,
+  eventos5,
+];
+
+/**
+ * Componente Eventos que exibe um carrossel com imagens de eventos passados da SEMAC.
+ * Inclui uma breve descrição e link para uma página com informações adicionais sobre as edições anteriores.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * &lt;Eventos />
+ *
+ * @returns {JSX.Element} Seção de eventos passados com um carrossel de imagens e um link para mais detalhes.
+ */
+const Eventos = () => (
+  &lt;div className="eventos-container" id="eventos-anteriores">
+    &lt;div className="eventos-header">
+      &lt;hr className="border-gradient">&lt;/hr>
+      &lt;h1>Reviva nossos eventos passados!&lt;/h1>
+      &lt;span>
+        Conheça os eventos anteriores da SEMAC e descubra as inovações e
+        tendências que marcaram nossa trajetória.
+      &lt;/span>
+      &lt;span>
+        Acesse para explorar fotografias das palestras, workshops e experiências
+        passadas.
+      &lt;/span>
+      &lt;div className="eventos-btn-container">
+        &lt;Link to="/edicoes-anteriores" className="eventos-btn">
+          Confira nossos últimos eventos ➔
+        &lt;/Link>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div id="eventos" className="eventos-carousel">
+      &lt;Carousel
+        responsive={responsive}
+        infinite
+        autoPlay={true}
+        autoPlaySpeed={3000}
+        keyBoardControl
+        showDots
+        pauseOnHover
+        dotListClass="custom-dot-list-style"
+        arrows={true}
+        containerClass="eventos-container"
+        itemClass="carousel-item"
+      >
+        {eventImages.map((item, index) => (
+          &lt;div className="carousel-item" key={index}>
+            &lt;img
+              src={item}
+              className="evento-img"
+              alt={`Evento ${index + 1}`}
+            />
+          &lt;/div>
+        ))}
+      &lt;/Carousel>
+    &lt;/div>
+  &lt;/div>
+);
+
+export default Eventos;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

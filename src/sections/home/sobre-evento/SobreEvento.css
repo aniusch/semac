@@ -67,6 +67,10 @@
     filter: brightness(0) invert(1);
 }
 
+.react-multi-carousel-dot-list {
+    bottom: -15px !important;
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1499px) {
     .textos h1 {
         margin: 0px 0;

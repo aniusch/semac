@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: sections/terceira-edicao/programacao/Programacao.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: sections/terceira-edicao/programacao/Programacao.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState } from "react";
+import ArrowLeftIcon from "../../../assets/icons/arrow_left_prog.svg";
+import ArrowRightIcon from "../../../assets/icons/arrow_right_prog.svg";
+import "./Programacao.css";
+import CarouselProgramacao from "../../../components/carousel-programacao/CarouselProgramacao";
+import programacaoDias from "../../../data/lista_programacao_terceira_semana";
+
+/**
+ * Componente Programacao que exibe a programação diária do evento SEMAC.
+ * Permite navegar entre os dias do evento, exibindo os detalhes de cada dia selecionado.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * &lt;Programacao />
+ *
+ * @returns {JSX.Element} Seção de programação com navegação por dias e carrossel de eventos do dia atual.
+ */
+const Programacao = () => {
+  const [diaAtual, setDiaAtual] = useState(0);
+
+    /**
+   * Formata a data para exibir o dia numérico e o dia da semana separadamente.
+   *
+   * @param {string} data - Data no formato "DD/MM-DIASEMANA".
+   * @returns {Object} Objeto com data numerica e dia da semana.
+   */
+  const formatarData = (data) => {
+    const [dataNumerica, diaSemana] = data.split("-");
+    return { dataNumerica, diaSemana };
+  };
+
+  /**
+   * Muda o dia atual da programação baseado na direção ("next" ou "prev").
+   *
+   * @param {string} direction - Direção para mudar o dia ("next" para o próximo, "prev" para o anterior).
+   */
+  const handleChangeDia = (direction) => {
+    if (direction === "next" &amp;&amp; diaAtual &lt; programacaoDias.length - 1) {
+      setDiaAtual(diaAtual + 1);
+    } else if (direction === "prev" &amp;&amp; diaAtual > 0) {
+      setDiaAtual(diaAtual - 1);
+    }
+  };
+
+  const { dataNumerica, diaSemana } = formatarData(
+    programacaoDias[diaAtual].data
+  );
+
+  return (
+    &lt;div className="programacao-section" id="programacao">
+      &lt;div className="header">
+        &lt;h1>Programação&lt;/h1>
+        &lt;div className="nav-buttons">
+          &lt;button
+            onClick={() => handleChangeDia("prev")}
+            disabled={diaAtual === 0}
+            className="arrow-button"
+          >
+            &lt;img src={ArrowLeftIcon} alt="Seta para esquerda" />
+          &lt;/button>
+          &lt;span className="data-atual">{`${dataNumerica}-${diaSemana}`}&lt;/span>
+          &lt;button
+            onClick={() => handleChangeDia("next")}
+            disabled={diaAtual === programacaoDias.length - 1}
+            className="arrow-button"
+          >
+            &lt;img src={ArrowRightIcon} alt="Seta para direita" />
+          &lt;/button>
+        &lt;/div>
+      &lt;/div>
+      &lt;CarouselProgramacao
+        data={dataNumerica}
+        eventos={programacaoDias[diaAtual].eventos}
+      />
+      &lt;div className="container-texto-prog">
+        &lt;div className="texto-prog">
+          &lt;h1>Gostou da programação?&lt;/h1>
+          &lt;hr className="quebra-texto">&lt;/hr>
+          &lt;p>
+            Curtiu o que preparamos para a III Semana das Engenharias de
+            Automação e Computação? Não perca a chance de fazer parte dessa
+            experiência incrível! Inscreva-se agora e garanta seu lugar no
+            evento.
+          &lt;/p>
+          &lt;button
+            className="btn-participar"
+            onClick={() =>
+              window.open(
+                "https://eventosacademicos.ufmt.br/index.php/semac/",
+                "_blank"
+              )
+            }
+          >
+            Quero Participar!
+          &lt;/button>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  );
+};
+
+export default Programacao;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

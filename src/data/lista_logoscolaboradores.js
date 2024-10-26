@@ -11,6 +11,23 @@ import OperCard from "../assets/colaboradores/oper_card.png";
 import Sicredi from "../assets/colaboradores/sicredi.png";
 import ZingerSkills from "../assets/colaboradores/zinger_skills.png";
 
+/**
+ * Lista de edições anteriores do evento SEMAC, com detalhes sobre cada edição,
+ * incluindo título, descrição e uma galeria de imagens associadas.
+ *
+ * @constant
+ * @type {Array<Object>}
+ * @property {string} edicao - Nome da edição (ex.: "1ª EDIÇÃO", "2ª EDIÇÃO").
+ * @property {string} titulo - Título da edição, que pode incluir HTML para formatação.
+ * @property {string} descricao - Descrição detalhada da edição.
+ * @property {Array<Object>} imagens - Lista de imagens associadas à edição.
+ * @property {string} imagens[].src - Caminho para a imagem.
+ * @property {string} imagens[].size - Tamanho da imagem (ex.: "small", "medium", "large").
+ *
+ * @example
+ * const edicao = lista_edicoes_anteriores[0];
+ * console.log(edicao.titulo); // Saída: "III Semana das Engenharias de<br />Automação e Computação"
+ */
 const empresasLogos = [
     { href: "https://www.amaggi.com.br/", src: Amaggi, alt: "Logo Amaggi" },
     { href: "https://nuvem.net/", src: Nuvem, alt: "Logo Nuvem" },

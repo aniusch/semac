@@ -2,6 +2,17 @@ import React from "react";
 import "./Colaboradores.css";
 import listaEmpresas from "../../../data/lista_logoscolaboradores";
 
+/**
+ * Componente Colaboradores que exibe uma seção de agradecimento aos colaboradores do evento.
+ * Inclui uma mensagem de agradecimento e uma coleção de logotipos dos colaboradores, cada um com um link para o site da empresa.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Colaboradores />
+ *
+ * @returns {JSX.Element} Seção de colaboradores com mensagem de agradecimento e logotipos clicáveis das empresas parceiras.
+ */
 const Colaboradores = () => {
   return (
     <div id="colaboradores" className="section_colaboradores">

@@ -8,6 +8,25 @@ import MailIcon from "../../../assets/footer_logos/Vector-2.png";
 import LocationIcon from "../../../assets/footer_logos/Vector.png";
 import { HashLink } from "react-router-hash-link";
 
+/**
+ * Componente Footer que exibe o rodapé do site com informações de contato, links úteis, localização e redes sociais.
+ *
+ * @component
+ * @param {Object} props - Propriedades do componente.
+ * @param {Array<Object>} props.links - Lista de links para navegação no rodapé.
+ * @param {string} props.links[].href - Âncora ou URL do link.
+ * @param {string} props.links[].text - Texto de exibição do link.
+ * 
+ * @example
+ * const links = [
+ *   { href: "#sobre", text: "Sobre" },
+ *   { href: "#programacao", text: "Programação" },
+ * ];
+ * 
+ * <Footer links={links} />
+ *
+ * @returns {JSX.Element} Rodapé do site com informações institucionais, contato e redes sociais.
+ */
 const Footer = ({ links }) => {
   return (
     <div>
@@ -63,8 +82,8 @@ const Footer = ({ links }) => {
         <div className="footer_menu">
           <div className="footer_col">
             <p className="colored-bigger">Menu</p>
-            {links.map((link) => (
-              <HashLink smooth to={link.href} className="link-item">
+            {links.map((link, index) => (
+              <HashLink key={index} smooth to={link.href} className="link-item">
                 {link.text}
               </HashLink>
             ))}

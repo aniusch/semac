@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: data/lista_programacao_terceira_semana.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: data/lista_programacao_terceira_semana.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Lista de programação diária do evento, contendo informações detalhadas sobre cada dia, turnos e eventos programados.
+ *
+ * @constant
+ * @type {Array&lt;Object>}
+ * @property {string} data - Data e dia da semana para a programação (ex.: "09/12-SEGUNDA").
+ * @property {Array&lt;Object>} eventos - Lista de turnos e seus respectivos eventos para o dia.
+ * @property {string} eventos[].dia - Descrição do dia do evento (ex.: "1° DIA").
+ * @property {string} eventos[].turno - Período do turno do evento (ex.: "TURNO VESPERTINO").
+ * @property {Array&lt;Object>} eventos[].eventos - Lista de eventos programados para o turno.
+ * @property {string} eventos[].eventos[].horario - Horário do evento (ex.: "13h - 15h").
+ * @property {string} eventos[].eventos[].titulo - Título do evento (ex.: "PALESTRA DE ABERTURA").
+ * @property {string} eventos[].eventos[].tipo - Tipo do evento (ex.: "PALESTRA", "MINICURSO", "HACKATON").
+ * @property {Array&lt;string>} eventos[].eventos[].palestrantes - Lista de palestrantes do evento.
+ *
+ * @example
+ * const primeiroDia = programacaoDias[0];
+ * console.log(primeiroDia.data); // Saída: "09/12-SEGUNDA"
+ * console.log(primeiroDia.eventos[0].eventos[0].titulo); // Saída: "PALESTRA DE ABERTURA"
+ */
+const programacaoDias = [
+    {
+        data: "09/12-SEGUNDA", 
+        eventos: [
+            {
+                dia: "1° DIA",
+                turno: "TURNO VESPERTINO",
+                eventos: [
+                    { horario: "13h - 15h", titulo: "PALESTRA DE ABERTURA", tipo: "PALESTRA", palestrantes: ["João Silva de Souza Moreira Moura"] },
+                    { horario: "15h - 18h", titulo: "MINICURSO DE PYTHON", tipo: "MINICURSO", palestrantes: ["Jonas Silva", "Ricardo Moura"] },
+                    { horario: "15h - 18h", titulo: "MINICURSO DE FIGMA", tipo: "MINICURSO", palestrantes: ["Amanda Costa", "Junior Santos"] },
+                ]
+            },
+            {
+                dia: "1° DIA",
+                turno: "TURNO NOTURNO",
+                eventos: [
+                    { horario: "19h - 20h", titulo: "COMO A INTELIGÊNCIA ARTIFICIAL ESTÁ IMPACTANDO NA CIBERSEGURANÇA", tipo: "PALESTRA", palestrantes: ["Maria da Silva"] },
+                    { horario: "20h - 21h", titulo: "PALESTRA 2", tipo: "PALESTRA", palestrantes: ["João Moura"] },
+                    { horario: "21h - 22h", titulo: "PALESTRA 3", tipo: "PALESTRA", palestrantes: ["Jonas Silva", "Ricardo Moura"] },
+                    { horario: "22h - 23h", titulo: "PALESTRA 4", tipo: "PALESTRA", palestrantes: ["Elizabeth Santos"] },
+                ]
+            }
+        ]
+    },
+    {
+        data: "10/12-TERÇA", 
+        eventos: [
+            {
+                dia: "2° DIA",
+                turno: "TURNO VESPERTINO",
+                eventos: [
+                    { horario: "13h - 15h", titulo: "PALESTRA DE DESENVOLVIMENTO DE SOFTWARE", tipo: "PALESTRA", palestrantes: ["Fernanda Oliveira"] },
+                    { horario: "15h - 18h", titulo: "MINICURSO DE DESIGN UX/UI", tipo: "MINICURSO", palestrantes: ["Paulo Souza"] },
+                ]
+            },
+            {
+                dia: "2° DIA",
+                turno: "TURNO NOTURNO",
+                eventos: [
+                    { horario: "19h - 20h", titulo: "PALESTRA SOBRE IA NO MERCADO", tipo: "PALESTRA", palestrantes: ["Gabriel Rocha"] },
+                    { horario: "20h - 21h", titulo: "PALESTRA DE CLOUD COMPUTING", tipo: "PALESTRA", palestrantes: ["Ana Beatriz"] },
+                    { horario: "21h - 22h", titulo: "PALESTRA DE DEVOPS", tipo: "PALESTRA", palestrantes: ["Ricardo Mendes"] },
+                ]
+            }
+        ]
+    },
+    {
+        data: "11/12-QUARTA", 
+        eventos: [
+            {
+                dia: "3° DIA",
+                turno: "TURNO VESPERTINO",
+                eventos: [
+                    { horario: "13h - 15h", titulo: "PALESTRA DE DESENVOLVIMENTO DE SOFTWARE", tipo: "PALESTRA", palestrantes: ["Fernanda Oliveira"] },
+                    { horario: "15h - 18h", titulo: "MINICURSO DE DESIGN UX/UI", tipo: "MINICURSO", palestrantes: ["Paulo Souza"] },
+                ]
+            },
+            {
+                dia: "3° DIA",
+                turno: "TURNO NOTURNO",
+                eventos: [
+                    { horario: "19h - 20h", titulo: "PALESTRA SOBRE IA NO MERCADO", tipo: "PALESTRA", palestrantes: ["Gabriel Rocha"] },
+                    { horario: "20h - 21h", titulo: "PALESTRA DE CLOUD COMPUTING", tipo: "PALESTRA", palestrantes: ["Ana Beatriz"] },
+                    { horario: "21h - 22h", titulo: "PALESTRA DE DEVOPS", tipo: "PALESTRA", palestrantes: ["Ricardo Mendes"] },
+                ]
+            }
+        ]
+    },
+    {
+        data: "12 e 13-QUINTA E SEXTA", 
+        eventos: [
+            {
+                dia: "4° DIA",
+                turno: "TURNO VESPERTINO",
+                eventos: [
+                    { horario: "13h - 15h", titulo: "HACHATON DA SEMAC", tipo: "HACKATON", palestrantes: ["Fernanda Oliveira"] }
+                ]
+            },
+            {
+                dia: "5° DIA",
+                turno: "TURNO VESPERTINO",
+                eventos: [
+                    { horario: "13h - 15h", titulo: "HACHATON DA SEMAC", tipo: "HACKATON", palestrantes: ["Fernanda Oliveira"] },
+                ]
+            }
+        ]
+    }
+];
+
+export default programacaoDias;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

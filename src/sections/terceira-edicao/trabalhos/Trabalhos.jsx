@@ -1,6 +1,18 @@
 import React from "react";
 import "./Trabalhos.css";
 import TrabalhosImg from "../../../assets/trabalhos/img-trabalhos.png";
+
+/**
+ * Componente Trabalhos que exibe uma chamada para submissão de trabalhos no evento SEMAC.
+ * Contém uma imagem ilustrativa, descrição e um botão para redirecionar para a página de submissão.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Trabalhos />
+ *
+ * @returns {JSX.Element} Seção de chamada para submissão de trabalhos no evento SEMAC, com uma descrição, imagem e botão de ação.
+ */
 const Trabalhos = () => {
   return (
     <div id="trabalhos">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Numeros from "../sections/home/numeros/Numeros";
 import Faq from "../sections/common/faq/Faq";
 import Colaboradores from "../sections/common/colaboradores/Colaboradores";
@@ -10,7 +10,23 @@ import Trabalhos from "../sections/terceira-edicao/trabalhos/Trabalhos";
 import Programacao from "../sections/terceira-edicao/programacao/Programacao";
 import linksPaginas from "../data/links_paginas";
 
+/**
+ * Componente ThirdEditionPage que exibe a página da terceira edição do evento.
+ * Inclui seções detalhadas sobre a edição, trabalhos apresentados, programação do evento, colaboradores, e um botão para voltar ao topo.
+ *
+ * Ao montar, o componente faz a rolagem suave da página até o topo.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <ThirdEditionPage />
+ *
+ * @returns {JSX.Element} Página da terceira edição com seções de herói, sobre a edição, números, trabalhos, FAQ, programação, colaboradores e um botão para voltar ao topo.
+ */
 function ThirdEditionPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <>
       <HeroTerceiraEdicao />

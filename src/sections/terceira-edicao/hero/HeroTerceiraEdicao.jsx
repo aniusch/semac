@@ -8,9 +8,23 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+/**
+ * Componente HeroTerceiraEdicao que exibe o cabeçalho da página da terceira edição da SEMAC.
+ * Inclui um menu de navegação, informações sobre o evento e uma animação.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <HeroTerceiraEdicao />
+ *
+ * @returns {JSX.Element} Cabeçalho da página da terceira edição da SEMAC, com animação, navegação e informações introdutórias sobre o evento.
+ */
 const HeroTerceiraEdicao = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+   /**
+   * Alterna a visibilidade do menu de navegação em dispositivos móveis.
+   */
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -18,9 +32,8 @@ const HeroTerceiraEdicao = () => {
   return (
     <div className="hero-terceira" id="hero-terceira">
       <nav className="nav-bar-terceira">
-        <a href={"/"} target="_blank" className="botao-para-home">
-          {" "}
-          <img alt="SEMAC Logo" src={logo} />{" "}
+        <a href={"/"} className="botao-para-home">
+          <img alt="SEMAC Logo" src={logo} />
         </a>
         <button className="nav-menu-button" onClick={toggleMenu}>
           <Bars3Icon className="nav-menu-icon" />

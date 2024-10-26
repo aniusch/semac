@@ -53,6 +53,14 @@ const responsive = {
     }
 };
 
+/**
+ * Componente de grupo de botões de navegação personalizado para o carrossel, exibindo setas à esquerda e à direita.
+ *
+ * @param {Object} props - Propriedades do componente.
+ * @param {function} props.next - Função para avançar no carrossel.
+ * @param {function} props.previous - Função para retroceder no carrossel.
+ * @returns {JSX.Element} Botões de navegação personalizados.
+ */
 const ButtonGroup = ({ next, previous, ...rest }) => {
     const {
         carouselState: { currentSlide },
@@ -69,6 +77,17 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
     );
 };
 
+/**
+ * Componente SobreEvento que descreve a SEMAC e as categorias de atividades oferecidas, como minicursos, palestras, painéis e networking.
+ * Exibe as categorias com ícones e descrições, utilizando um carrossel em dispositivos móveis.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <SobreEvento />
+ *
+ * @returns {JSX.Element} Seção de informações sobre o evento SEMAC com categorias de atividades, adaptada para desktop e mobile.
+ */
 const SobreEvento = () => {
     return (
         <div id='sobre-evento' className="sobre">

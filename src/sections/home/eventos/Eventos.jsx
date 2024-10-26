@@ -8,6 +8,7 @@ import eventos4 from "../../../assets/eventos/eventos4.jpg";
 import eventos5 from "../../../assets/eventos/eventos5.jpg";
 import eventos6 from "../../../assets/eventos/eventos6.jpg";
 import "./Eventos.css";
+import { Link } from "react-router-dom";
 
 const responsive = {
   desktop: {
@@ -24,8 +25,26 @@ const responsive = {
   },
 };
 
-const eventImages = [eventos6, eventos1, eventos2, eventos3, eventos4, eventos5];
+const eventImages = [
+  eventos6,
+  eventos1,
+  eventos2,
+  eventos3,
+  eventos4,
+  eventos5,
+];
 
+/**
+ * Componente Eventos que exibe um carrossel com imagens de eventos passados da SEMAC.
+ * Inclui uma breve descrição e link para uma página com informações adicionais sobre as edições anteriores.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Eventos />
+ *
+ * @returns {JSX.Element} Seção de eventos passados com um carrossel de imagens e um link para mais detalhes.
+ */
 const Eventos = () => (
   <div className="eventos-container" id="eventos-anteriores">
     <div className="eventos-header">
@@ -40,9 +59,9 @@ const Eventos = () => (
         passadas.
       </span>
       <div className="eventos-btn-container">
-        <a href="#eventos" className="eventos-btn">
+        <Link to="/edicoes-anteriores" className="eventos-btn">
           Confira nossos últimos eventos ➔
-        </a>
+        </Link>
       </div>
     </div>
 

@@ -22,6 +22,15 @@ const responsive = {
   },
 };
 
+/**
+ * Componente de grupo de botões de navegação do carrossel para dispositivos específicos.
+ * 
+ * @param {Object} props - Propriedades do componente.
+ * @param {string} props.device - Tipo de dispositivo, usado para posicionamento.
+ * @param {function} props.next - Função para avançar no carrossel.
+ * @param {function} props.previous - Função para retroceder no carrossel.
+ * @returns {JSX.Element} Botões de navegação personalizados.
+ */
 const ButtonGroup = ({ device, next, previous, goToSlide, ...rest }) => {
   const {
     carouselState: { currentSlide },
@@ -63,13 +72,31 @@ const ButtonGroup = ({ device, next, previous, goToSlide, ...rest }) => {
   );
 };
 
+/**
+ * Componente Palestrantes que exibe um carrossel de palestrantes do evento SEMAC.
+ * Contém uma descrição sobre os palestrantes e opções de navegação personalizadas para desktop e mobile.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Palestrantes />
+ *
+ * @returns {JSX.Element} Seção de palestrantes com carrossel animado e navegação personalizada.
+ */
 const Palestrantes = () => {
   const [autoPlay, setAutoPlay] = useState(true); 
 
+
+  /**
+   * Desativa o auto-play do carrossel ao interagir com ele.
+   */
   const handleInteractionStart = () => {
     setAutoPlay(false);
   };
 
+   /**
+   * Reativa o auto-play do carrossel após a interação.
+   */
   const handleInteractionEnd = () => {
     setAutoPlay(true);
   };

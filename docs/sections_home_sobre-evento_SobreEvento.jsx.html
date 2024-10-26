@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: sections/home/sobre-evento/SobreEvento.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: sections/home/sobre-evento/SobreEvento.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import './SobreEvento.css';
+import iconMini from "../../../assets/icons/iconminicurso.svg";
+import iconPal from "../../../assets/icons/iconpalestra.svg";
+import iconPain from "../../../assets/icons/iconpaineis.svg";
+import iconNet from "../../../assets/icons/iconnetwork.svg";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import Arrow from "../../../assets/icons/arrow_sobre.svg";
+
+const categorias = [
+    {
+        id: 'minicursos',
+        icon: iconMini,
+        alt: 'Icon_Minicursos',
+        titulo: 'Minicursos',
+        descricao: 'Aprenda e desenvolva novas habilidades com minicursos especializados',
+        corCirculo: '#02A8F6',
+    },
+    {
+        id: 'palestras',
+        icon: iconPal,
+        alt: 'Icon_Palestras',
+        titulo: 'Palestras',
+        descricao: 'Inspire-se com líderes e especialistas discutindo as últimas tendências',
+        corCirculo: '#9849FF',
+    },
+    {
+        id: 'paineis',
+        icon: iconPain,
+        alt: 'Icon_Paineis',
+        titulo: 'Painéis',
+        descricao: 'Participe de debates interativos sobre desafios e oportunidades atuais',
+        corCirculo: '#9849FF',
+    },
+    {
+        id: 'network',
+        icon: iconNet,
+        alt: 'Icon_Network',
+        titulo: 'Network',
+        descricao: 'Amplie sua rede de contatos e crie novas oportunidades de colaboração',
+        corCirculo: '#02A8F6',
+    },
+];
+
+const responsive = {
+    tablet: {
+        breakpoint: { max: 768, min: 464 },
+        items: 1
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
+
+/**
+ * Componente de grupo de botões de navegação personalizado para o carrossel, exibindo setas à esquerda e à direita.
+ *
+ * @param {Object} props - Propriedades do componente.
+ * @param {function} props.next - Função para avançar no carrossel.
+ * @param {function} props.previous - Função para retroceder no carrossel.
+ * @returns {JSX.Element} Botões de navegação personalizados.
+ */
+const ButtonGroup = ({ next, previous, ...rest }) => {
+    const {
+        carouselState: { currentSlide },
+    } = rest;
+    return (
+        &lt;div>
+            &lt;button className={`btnArrow left ${currentSlide === 0 ? "disabled" : ""}`} onClick={() => previous()}>
+                &lt;img src={Arrow} alt="Arrow-Left" />
+            &lt;/button>
+            &lt;button className={`btnArrow right ${currentSlide === 3 ? "disabled" : ""}`} onClick={() => next()}>
+                &lt;img src={Arrow} alt="Arrow-Right" />
+            &lt;/button>
+        &lt;/div>
+    );
+};
+
+/**
+ * Componente SobreEvento que descreve a SEMAC e as categorias de atividades oferecidas, como minicursos, palestras, painéis e networking.
+ * Exibe as categorias com ícones e descrições, utilizando um carrossel em dispositivos móveis.
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * &lt;SobreEvento />
+ *
+ * @returns {JSX.Element} Seção de informações sobre o evento SEMAC com categorias de atividades, adaptada para desktop e mobile.
+ */
+const SobreEvento = () => {
+    return (
+        &lt;div id='sobre-evento' className="sobre">
+            &lt;section className="txt">
+                &lt;div className="retangulo">
+                &lt;/div>
+                &lt;h1>Sobre&lt;/h1>
+                &lt;p>A SEMAC – Semana das Engenharias de Automação e Computação da UFMT – é um evento anual que promove a troca de
+                    conhecimentos e experiências entre estudantes, profissionais e entusiastas da área tecnológica, oferecendo uma
+                    plataforma única para aprendizado, inovação e networking.&lt;/p>
+            &lt;/section>
+
+            &lt;section className="icons">
+                &lt;div className='apenas-Desktop'>
+                    &lt;div className="categorias">
+                        {categorias.map((categoria) => (
+                            &lt;div className="iconesCategorias" id={categoria.id} key={categoria.id}>
+                                &lt;div className="icone-circulo" style={{ backgroundColor: categoria.corCirculo }}>
+                                    &lt;img src={categoria.icon} alt={categoria.alt} className={`icone_${categoria.id}`} />
+                                &lt;/div>
+                                &lt;div className="textos">
+                                    &lt;h1>{categoria.titulo}&lt;/h1>
+                                    &lt;p>{categoria.descricao}&lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                        ))}
+                    &lt;/div>
+                &lt;/div>
+
+                &lt;div className='apenas-Mobile'>
+                    &lt;Carousel arrows={false} customButtonGroup={&lt;ButtonGroup />} responsive={responsive} autoPlay={true} autoPlaySpeed={5000} infinite={true} pauseOnHover={true} shouldResetAutoplay={true}>
+                        {categorias.map((categoria) => (
+                            &lt;div className="iconesCategorias" id={categoria.id} key={categoria.id}>
+                                &lt;div className="icone-circulo" style={{ backgroundColor: categoria.corCirculo }}>
+                                    &lt;img src={categoria.icon} alt={categoria.alt} className={`icone_${categoria.id}`} />
+                                &lt;/div>
+                                &lt;div className="textos">
+                                    &lt;h1>{categoria.titulo}&lt;/h1>
+                                    &lt;p>{categoria.descricao}&lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                        ))}
+                    &lt;/Carousel>
+                &lt;/div>
+            &lt;/section>
+        &lt;/div>
+    );
+};
+
+export default SobreEvento;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Accordion">Accordion</a></li><li><a href="global.html#AnaisTrabalhos">AnaisTrabalhos</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#ButtonGroup">ButtonGroup</a></li><li><a href="global.html#CarouselMinicursos">CarouselMinicursos</a></li><li><a href="global.html#CarouselProgramacao">CarouselProgramacao</a></li><li><a href="global.html#Colaboradores">Colaboradores</a></li><li><a href="global.html#Eventos">Eventos</a></li><li><a href="global.html#Faq">Faq</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#GaleriaEdicao">GaleriaEdicao</a></li><li><a href="global.html#Hero">Hero</a></li><li><a href="global.html#HeroEdicoesAnteriores">HeroEdicoesAnteriores</a></li><li><a href="global.html#HeroTerceiraEdicao">HeroTerceiraEdicao</a></li><li><a href="global.html#HomePage">HomePage</a></li><li><a href="global.html#Minicursos">Minicursos</a></li><li><a href="global.html#NotFoundPage">NotFoundPage</a></li><li><a href="global.html#Numeros">Numeros</a></li><li><a href="global.html#Palestrantes">Palestrantes</a></li><li><a href="global.html#Palestrantes_list">Palestrantes_list</a></li><li><a href="global.html#PreviousEditions">PreviousEditions</a></li><li><a href="global.html#Programacao">Programacao</a></li><li><a href="global.html#RouteTitleUpdater">RouteTitleUpdater</a></li><li><a href="global.html#ScrollToTopButton">ScrollToTopButton</a></li><li><a href="global.html#SobreEdicao">SobreEdicao</a></li><li><a href="global.html#SobreEvento">SobreEvento</a></li><li><a href="global.html#SobreTerceiraEdicao">SobreTerceiraEdicao</a></li><li><a href="global.html#TextoEdicao">TextoEdicao</a></li><li><a href="global.html#ThirdEditionPage">ThirdEditionPage</a></li><li><a href="global.html#Trabalhos">Trabalhos</a></li><li><a href="global.html#empresasLogos">empresasLogos</a></li><li><a href="global.html#faqItems">faqItems</a></li><li><a href="global.html#linksPaginas">linksPaginas</a></li><li><a href="global.html#listaMinicursosPalestras">listaMinicursosPalestras</a></li><li><a href="global.html#lista_edicoes_anteriores">lista_edicoes_anteriores</a></li><li><a href="global.html#obrasAnais">obrasAnais</a></li><li><a href="global.html#programacaoDias">programacaoDias</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri Oct 25 2024 12:02:37 GMT-0400 (Amazon Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

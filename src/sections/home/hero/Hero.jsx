@@ -8,14 +8,33 @@ import { Link } from "react-router-dom";
 import linksPaginas from "../../../data/links_paginas";
 import { HashLink } from 'react-router-hash-link';
 
+/**
+ * Componente Hero que exibe a seção inicial da página principal da SEMAC.
+ * Contém um logotipo adaptado para desktop e mobile, menu de navegação, chamada para a 3ª edição do evento e um botão de rolagem suave para a seção "Sobre o Evento".
+ *
+ * @component
+ * @example
+ * // Exemplo de uso básico:
+ * <Hero />
+ *
+ * @returns {JSX.Element} Seção inicial da página principal da SEMAC, com menu, logotipo e link para a 3ª edição do evento.
+ */
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
+  /**
+   * Alterna a visibilidade do menu de navegação em dispositivos móveis.
+   */
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  /**
+   * Rola suavemente até uma seção específica da página.
+   *
+   * @param {string} id - ID do elemento alvo da rolagem.
+   */
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -24,6 +43,9 @@ const Hero = () => {
   };
 
   useEffect(() => {
+    /**
+     * Ajusta o estado `isMobile` com base na largura da janela para alternar entre o logotipo mobile e desktop.
+     */
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -64,7 +86,6 @@ const Hero = () => {
           </div>
           <Link
             to={"/terceira-edicao"}
-            target="_blank"
             className="terceira-edicao-btn"
           >
            Saiba mais sobre a 3ª Edição ➔
