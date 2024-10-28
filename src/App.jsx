@@ -42,6 +42,7 @@ const RouteTitleUpdater = () => {
  *
  * @returns {JSX.Element} Aplicativo principal com rotas configuradas para a página inicial, terceira edição, edições anteriores e uma página 404.
  */
+
 function App() {
   return (
     <Router>
