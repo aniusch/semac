@@ -27,7 +27,7 @@ import phone from "../assets/icons/phone.svg";
  *     content: (
  *       <>
  *         Para se inscrever, acesse o site da edição e {" "}
- *         <a href="https://eventosacademicos.ufmt.br/index.php/semac/" target="_blank" rel="noopener noreferrer">
+ *         <a href="https://www.even3.com.br/semac-3e/" target="_blank" rel="noopener noreferrer">
  *           se inscreva
  *         </a>.
  *       </>
@@ -50,7 +50,7 @@ const faqItems = [
       <>
         Para se inscrever de maneira rápida e fácil, acesse o site da edição e {" "}
         <a
-          href="https://eventosacademicos.ufmt.br/index.php/semac/"
+          href="https://www.even3.com.br/semac-3e/"
           target="_blank"
           rel="noopener noreferrer"
         >
