@@ -87,7 +87,7 @@ const Programacao = () => {
             className="btn-participar"
             onClick={() =>
               window.open(
-                "https://eventosacademicos.ufmt.br/index.php/semac/",
+                "https://www.even3.com.br/semac-3e/",
                 "_blank"
               )
             }

@@ -64,7 +64,7 @@ const HeroTerceiraEdicao = () => {
           </div>
 
           <Link
-            to={"https://eventosacademicos.ufmt.br/index.php/semac/"}
+            to={"https://www.even3.com.br/semac-3e/"}
             target="_blank"
             className="botao-inscricao"
           >
