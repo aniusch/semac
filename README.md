@@ -1,3 +1,8 @@
+# Semac - Semana Acadêmica de Computação e Automação
+
+Site oficial da Semana Acadêmica de Computação e Automação da Faculdade de Engenharia da UFMT.  
+Acesse o site: [semac.ufmt.br](https://semac.ufmt.br/)
+
 # Documentação
 ## Iniciando o projeto
 
